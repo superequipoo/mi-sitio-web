@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ortografía | Como usarlo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body style="background:#0a192f; margin:0; font-family:sans-serif;">
+
+<header style="padding:20px; border-bottom:1px solid #112240;">
+    <h2 style="color:white; margin:0;">APRENDE <span style="color:#00aaff;">MAS</span> // ORTOGRAFÍA</h2>
+</header>
+
+<div class="ortografia-wrapper">
+    <a href="{{ url_for('ejercicios_lengua') }}" class="volver-orto">✦ Volver al Banco</a>
+
+    <div class="ortografia-header" style="margin-top:20px;">
+        <span class="sobrelinea">BLOQUE 1 DE 6 / BÁSICO</span>
+        <h1>Ortografía Práctica 📝</h1>
+        <p>Domina B/V, S/C/Z, H y acentuación. Lo que más sale en COMIPEMS y EXANI.</p>
+    </div>
+
+    <div class="grid-ortografia">
+        <div class="card-orto borde-verde"><span class="badge-orto facil">NIVEL 1</span><h3>🅱️ Uso de B y V</h3><p class="desc">Reglas de -aba, -bir, -buir, -ble.</p><p class="meta">⏱ 10 min | ✦ 20 preguntas</p><a href="{{ url_for('B_y_V')}}" class="btn-orto">Empezar →</a></div>
+        <div class="card-orto borde-amarillo"><span class="badge-orto medio">NIVEL 2</span><h3>🐍 Uso de S, C y Z</h3><p class="desc">Terminaciones -sión, -ción, -oso.</p><p class="meta">⏱ 12 min | ✦ 20 preguntas</p><a href="{{ url_for('s_c_z')}}" class="btn-orto">Empezar →</a></div>
+        <div class="card-orto borde-rojo"><span class="badge-orto dificil">NIVEL 2</span><h3>🤫 Uso de la H</h3><p class="desc">H intercalada, hay, ahí, ay.</p><p class="meta">⏱ 10 min | ✦ 15 preguntas</p><a href="{{ url_for('h')}}" class="btn-orto">Empezar →</a></div>
+        <div class="card-orto borde-azul"><span class="badge-orto medio">NIVEL 3</span><h3>⚡ Acentuación</h3><p class="desc">Agudas, graves, esdrújulas y diacrítica.</p><p class="meta">⏱ 15 min | ✦ 25 preguntas</p><a href="{{ url_for('acentuacion')}}" class="btn-orto">Empezar →</a></div>
+    </div>
+</div>
+
+</body>
+</html>

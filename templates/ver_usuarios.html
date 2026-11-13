@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECLUTAS - COMANDO AZUL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+<div class="registro-container">
+    <div class="registro-card">
+        <h1>RECLUTAS REGISTRADOS</h1>
+        <p class="subtitulo">// BASE DE DATOS TÁCTICA</p>
+
+        {% if usuarios %}
+            <div class="lista-usuarios">
+            {% for u in usuarios %}
+                <div class="usuario-card">
+                    <p class="usuario-id">ID: {{ u['id'] }}</p>
+                    <p class="usuario-nombre">NOMBRE: {{ u['nombre'] }}</p>
+                    <p class="usuario-email">EMAIL: {{ u['email'] }}</p>
+                </div>
+            {% endfor %}
+            </div>
+        {% else %}
+            <div class="alerta-error">0 USUARIOS - Aún no hay reclutas registrados</div>
+        {% endif %}
+
+        <a href="{{ url_for('registro') }}" class="btn-registrar btn-ver-usuarios">IR A REGISTRO</a>
+        <a href="{{ url_for('index') }}" class="volver">VOLVER AL INICIO</a>
+    </div>
+</div>
+</body>
+</html>

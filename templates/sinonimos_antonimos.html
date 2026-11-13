@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sinónimos y Antónimos - Semántica</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<div class="portada">
+    <span class="etiqueta">BLOQUE 1 // SEMÁNTICA</span>
+    <h1>SINÓNIMOS Y <span>ANTÓNIMOS</span></h1>
+    <p>El bloque que te regala 4 preguntas en EXANI si sabes los trucos de contexto</p>
+</div>
+
+<div class="contenido">
+
+    <div class="bloque">
+        <h2>📚 Definiciones en 30 seg</h2>
+        <h3>SINÓNIMO</h3>
+        <ul>
+            <li><b>Mismo significado (o muy parecido):</b> casa = hogar, rápido = veloz</li>
+            <li><b>Tipos:</b> Totales (fallecer=morir) / Parciales (alegre=contento pero no siempre igual)</li>
+        </ul>
+        <h3>ANTÓNIMO</h3>
+        <ul>
+            <li><b>Significado opuesto:</b> alto ≠ bajo, amor ≠ odio</li>
+            <li><b>Tipos clave EXANI:</b></li>
+            <li><b>Graduales:</b> frío - tibio - caliente (puede haber punto medio)</li>
+            <li><b>Complementarios:</b> vivo / muerto, soltero / casado (no hay punto medio)</li>
+            <li><b>Recíprocos:</b> comprar / vender, dar / recibir</li>
+        </ul>
+        <div class="pregunta-box">
+            <b>TRUCO EXANI #1:</b> Nunca busques sinónimo perfecto, busca el que MEJOR quede en la oración. Contexto > diccionario.
+        </div>
+    </div>
+
+    <div class="bloque">
+        <h2>1. CÓMO ATACAR SINÓNIMOS EN EXAMEN</h2>
+        <h3>Paso 1: Sustituye en la frase</h3>
+        <ul>
+            <li><b>Frase:</b> "El alumno tuvo una actitud <b>arrogante</b>"</li>
+            <li><b>Opciones:</b> a) humilde b) altiva c) amable</li>
+            <li><b>Prueba:</b> "actitud humilde" no, "amable" no cuadra, "altiva" sí = RESPUESTA</li>
+        </ul>
+
+        <h3>Paso 2: Nivel de formalidad</h3>
+        <ul>
+            <li><b>EXANI te pone trampas:</b> enojado = iracundo (formal) / encabronado (coloquial)</li>
+            <li><b>En examen siempre elige el formal</b> si ambos significan lo mismo</li>
+        </ul>
+
+        <h3>Lista corta de sinónimos que SIEMPRE salen</h3>
+        <ul>
+            <li><b>Falacia = engaño, mentira</b></li>
+            <li><b>Efímero = pasajero, fugaz</b></li>
+            <li><b>Lacónico = breve, conciso</b></li>
+            <li><b>Veraz = verdadero, sincero</b></li>
+            <li><b>Inocuo = inofensivo</b></li>
+            <li><b>Prístino = puro, limpio, original</b></li>
+            <li><b>Insólito = raro, extraño</b></li>
+            <li><b>Perenne = eterno, duradero</b></li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h2>2. CÓMO ATACAR ANTÓNIMOS</h2>
+        <h3>Truco del prefijo</h3>
+        <ul>
+            <li><b>Muchos antónimos se hacen con prefijos:</b> posible -> <b>IM</b>posible, hacer -> <b>DES</b>hacer</li>
+            <li><b>Prefijos EXANI:</b> in-, im-, des-, dis-, a-, anti-</li>
+            <li><b>Ej:</b> legal / ilegal, moral / amoral, simétrico / asimétrico</li>
+        </ul>
+
+        <h3>Lista de antónimos tramposos</h3>
+        <ul>
+            <li><b>Probo = honesto / Ímprobo = deshonesto</b> (no probó jaja)</li>
+            <li><b>Venial = leve / Mortal</b></li>
+            <li><b>Exógeno = de fuera / Endógeno = de dentro</b></li>
+            <li><b>Remoto = lejano / Próximo = cercano</b></li>
+            <li><b>Mitigar = suavizar / Exacerbar = empeorar</b></li>
+            <li><b>Opaco = no transparente / Diáfano = transparente</b></li>
+        </ul>
+
+        <div class="pregunta-box">
+            <b>TRUCO #2:</b> Si no sabes el significado, busca la raíz. "Bene" = bueno (benévolo) antónimo malevolo
+        </div>
+    </div>
+
+    <div class="bloque">
+        <h2>3. PARÓNIMOS - LA TRAMPA MORTAL DE EXANI</h2>
+        <p style="color:#8aa0c6;">Parecen sinónimos pero NO lo son. Se escriben parecido.</p>
+        <ul>
+            <li><b>Aptitud ≠ Actitud:</b> Aptitud = capacidad / Actitud = forma de ser</li>
+            <li><b>Absolver ≠ Absorber:</b> Absolver = perdonar / Absorber = chupar</li>
+            <li><b>Infligir ≠ Infringir:</b> Infligir = causar daño / Infringir = romper ley</li>
+            <li><b>Especia ≠ Especie:</b> Especia = condimento / Especie = clase</li>
+            <li><b>Prever ≠ Proveer:</b> Prever = anticipar / Proveer = suministrar</li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h2>🎮 EJERCICIOS TÁCTICOS - 8 PREGUNTAS</h2>
+
+        <div class="pregunta-box">
+            <p><b>1. Sinónimo de EFÍMERO</b></p>
+            <input type="text" class="ejercicio-input" id="p1" placeholder="...">
+        </div>
+
+        <div class="pregunta-box">
+            <p><b>2. Antónimo de PERENNE</b></p>
+            <input type="text" class="ejercicio-input" id="p2" placeholder="...">
+        </div>
+
+        <div class="pregunta-box">
+            <p><b>3. "Actitud altiva" sinónimo de altiva es:</b></p>
+            <input type="text" class="ejercicio-input" id="p3" placeholder="arrogante, humilde, amable?">
+        </div>
+
+        <div class="pregunta-box">
+            <p><b>4. Antónimo de DIÁFANO</b></p>
+            <input type="text" class="ejercicio-input" id="p4" placeholder="...">
+        </div>
+
+        <div class="pregunta-box">
+            <p><b>5. "Infligir daño" no es lo mismo que "Infringir la ley" - ¿Cómo se llaman estas palabras?</b></p>
+            <input type="text" class="ejercicio-input" id="p5" placeholder="sinónimos, parónimos, antónimos?">
+        </div>
+
+        <div class="pregunta-box">
+            <p><b>6. Sinónimo de LACÓNICO</b></p>
+            <input type="text" class="ejercicio-input" id="p6" placeholder="...">
+        </div>
+
+        <div class="pregunta-box">
+            <p><b>7. Antónimo de MITIGAR</b></p>
+            <input type="text" class="ejercicio-input" id="p7" placeholder="...">
+        </div>
+
+        <div class="pregunta-box">
+            <p><b>8. "Vivo / Muerto" qué tipo de antónimo es? (gradual, complementario o recíproco)</b></p>
+            <input type="text" class="ejercicio-input" id="p8" placeholder="...">
+        </div>
+
+        <button class="btn-comprobar" id="btn-comprobar">COMPROBAR MISIÓN</button>
+        <p id="resultado" style="margin-top:20px; font-weight:800;"></p>
+    </div>
+
+</div>
+
+<a href="{{ url_for('ejercicios_semantica') }}" class="volver-orto">✦ Volver</a>
+
+<!-- CONEXIÓN CON EL JS -->
+<script src="{{ url_for('static', filename='js/sinonimos_antonimos.js') }}"></script>
+
+</body>
+</html>

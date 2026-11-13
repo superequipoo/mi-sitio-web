@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN - COMANDO AZUL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+<div class="registro-container">
+    <div class="registro-card">
+        <h1>INICIAR SESIÓN</h1>
+        <p class="subtitulo">// ACCESO TÁCTICO</p>
+
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <div class="alerta-error">{{ messages[0] }}</div>
+          {% endif %}
+        {% endwith %}
+
+        <form method="POST" action="{{ url_for('login') }}">
+            <label>USUARIO</label>
+            <input type="text" name="usuario" required placeholder="tu usuario">
+
+            <label>CONTRASEÑA</label>
+            <input type="password" name="password" required placeholder="••••">
+
+            <button type="submit" class="btn-registrar">ENTRAR A BASE →</button>
+        </form>
+
+        <a href="{{ url_for('registro') }}" class="volver">¿No tienes cuenta? REGISTRATE</a>
+        <a href="{{ url_for('index') }}" class="volver" style="opacity:0.6;">← VOLVER AL INICIO</a>
+    </div>
+</div>
+</body>
+</html>

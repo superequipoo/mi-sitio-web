@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sopa de Letras - Lengua y Comunicación</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<header>
+    <h2>APRENDE <span>MAS</span> // SOPA</h2>
+    <a href="{{ url_for('videojuegos_lengua') }}" style="color:#00aaff; text-decoration:none; font-weight:bold;">← Volver a Videojuegos</a>
+</header>
+
+<div class="retos-container">
+    <h1>🔤 Sopa de Letras - Lengua y Comunicación</h1>
+    <p style="color:#8aa0c6;">Nivel: Secundaria + Preparatoria | Haz clic en las letras para seleccionar la palabra</p>
+
+    <p>Encuentra: <b id="lista">METÁFORA, NOVELA, SINÓNIMO, VERBO, ENSAYO, ADJETIVO, CONECTOR, POEMA</b></p>
+
+    <div id="sopa" class="sopa"></div>
+
+    <p id="msg" style="font-weight:800; margin-top:15px;"></p>
+    <p id="puntos" style="font-weight:800; color:#00ffc6;">Puntos: 0 / 8</p>
+    <p id="resultado" style="margin-top:10px; font-weight:800;"></p>
+
+    <button id="btn-reiniciar" class="btn-aventura">Reiniciar ↻</button>
+</div>
+
+<!-- CONEXIÓN CON EL JS -->
+<script src="{{ url_for('static', filename='js/sopa_letras.js') }}"></script>
+
+</body>
+</html>

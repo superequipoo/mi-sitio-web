@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprensión - Idea Principal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<header class="portada">
+    <h1>Comprensión <span>Idea Principal</span></h1>
+    <p>Bloque 3 - Comprensión Lectora. El tema que vale 40% del EXANI.</p>
+</header>
+
+<main class="contenido">
+
+    <section class="bloque bloque-naranja">
+        <h2>🎯 ¿Qué es la Idea Principal?</h2>
+        <p style="color:#94a3b8;">Es el mensaje más importante. Si borras todo lo demás, esto es lo que debe quedar.</p>
+        
+        <h3>1. Características</h3>
+        <ul>
+            <li>Responde a <b>¿De qué trata TODO el texto?</b></li>
+            <li>Es general, no un detalle</li>
+            <li>Normalmente es 1 sola oración</li>
+            <li>Si le puedes poner el título al texto con esa frase, es la principal</li>
+        </ul>
+
+        <h3>2. Dónde se esconde en el EXANI</h3>
+        <ul>
+            <li><b>Al inicio:</b> 60% de las veces</li>
+            <li><b>Al final:</b> 30% de las veces - Busca "En conclusión, Por lo tanto"</li>
+            <li><b>En el medio:</b> 10% - La más difícil</li>
+        </ul>
+    </section>
+
+    <section class="bloque bloque-azul">
+        <h2>💡 Principal vs Secundaria</h2>
+        <ul>
+            <li><b>Principal = GENERAL:</b> "La tecnología cambió la educación"</li>
+            <li><b>Secundaria = ESPECÍFICA:</b> "En 2020 se usó Zoom en 80% de escuelas"</li>
+            <li>Secundaria responde a ¿Cómo? ¿Por qué? ¿Ejemplo?</li>
+        </ul>
+    </section>
+
+    <section class="bloque">
+        <h2>✍️ Ejercicios Comprensión</h2>
+
+        <div class="pregunta-box">
+            <p style="font-size:13px; color:#94a3b8;">TEXTO: "Dormir 8 horas mejora memoria, reduce estrés y ayuda a bajar de peso. Dormir poco causa accidentes."</p>
+            <p>¿Idea principal?</p>
+            <input class="ejercicio-input" placeholder="">
+        </div>
+
+        <div class="pregunta-box">
+            <p>"TikTok reduce la atención" dentro de un texto sobre redes sociales es...</p>
+            <input class="ejercicio-input" placeholder="principal / secundaria">
+        </div>
+
+        <button class="btn-comprobar" id="btn-comprobar">Comprobar</button>
+        <div id="resultado" style="margin-top:15px; font-weight:800;"></div>
+    </section>
+
+</main>
+
+<a href="{{ url_for('ejercicios_comprension') }}" class="volver-orto">✦ Volver</a>
+
+<!-- CONEXIÓN CON EL JS -->
+<script src="{{ url_for('static', filename='js/idea_principal.js') }}"></script>
+
+</body>
+</html>

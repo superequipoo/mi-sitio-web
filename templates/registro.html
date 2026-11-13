@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+<div style="max-width:400px; margin:80px auto; background:#0a1931; padding:30px; border:2px solid #00d4ff; border-radius:12px;">
+    <h2 style="text-align:center;">REGISTRO // NUEVO RECLUTA</h2>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for cat, msg in messages %}
+          <p style="background:#ff000033; border:1px solid red; color:#ff7777; padding:10px; text-align:center;">{{ msg }}</p>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <form method="POST" action="{{ url_for('registro') }}">
+        <label>NOMBRE COMPLETO</label>
+        <input type="text" name="nombre" required style="width:100%; padding:10px; margin-bottom:10px;">
+        
+        <label>NOMBRE DE USUARIO (para iniciar sesión)</label>
+        <input type="text" name="usuario" required placeholder="ej: juan123" style="width:100%; padding:10px; margin-bottom:10px;">
+        
+        <label>CORREO TÁCTICO</label>
+        <input type="email" name="correo" required style="width:100%; padding:10px; margin-bottom:10px;">
+        
+        <label>CONTRASEÑA</label>
+        <input type="password" name="password" required style="width:100%; padding:10px; margin-bottom:20px;">
+
+        <button type="submit" style="width:100%; padding:12px; background:#00aaff; color:white; font-weight:bold; border:none;">REGISTRARME Y ENTRAR</button>
+    </form>
+    <br>
+    <a href="{{ url_for('index') }}" style="color:#aaa;">VOLVER AL INICIO</a>
+</div>
+</body>
+</html>

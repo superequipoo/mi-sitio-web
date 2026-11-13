@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lengua y Comunicación | Mundo del Saber</title>
+
+    <!-- Conecta la página con la hoja de estilos CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <html lang="es">
+<body>
+
+<!-- Barra de navegación para regresar a la página principal -->
+<nav class="barra">
+    <a href="{{ url_for('index') }}" class="marca">
+        <span class="logo">✦</span> Mundo del Saber
+    </a>
+    <a href="{{ url_for('index') }}" class="enlace-inicio"> Materias</a>
+</nav>
+
+<!-- Portada principal de Lengua y Comunicación -->
+<header class="portada portada-rosa">
+    <span class="etiqueta"> IMAGINA, LEE Y CREA</span>
+    <h1>¡Bienvenido a<br><span>Lengua y Comunicación!</span></h1>
+    <p>Las palabras abren mundos nuevos. ¡Descubre el poder de leer y expresarte!</p>
+    <div class="insignia"> 📚 ¡Tu imaginación no tiene límites!</div>
+</header>
+
+<!-- Contenido principal con las actividades disponibles -->
+<main class="contenido">
+    <div class="titulo-seccion">
+        <span class="sobrelinea">UN MUNDO DE PALABRAS</span>
+        <h2>¡Explora tus actividades!</h2>
+        <p>Lee, juega, escribe y descubre nuevas formas de comunicarte.</p>
+    </div>
+
+    <!-- Cuadrícula que organiza las tarjetas de actividades -->
+    <section class="rejilla-actividades">
+
+        <!-- Tarjeta de lecturas con enlace a los géneros literarios -->
+        <article class="actividad actividad-rosa">
+            <div class="icono-actividad"> 📖 </div>
+            <span class="numero">01 / IMAGINACIÓN</span>
+            <h3>Lecturas</h3>
+            <p>Descubre cuentos, historias y textos interesantes mientras mejoras tu comprensión.</p>
+            <span class="pie-tarjeta">Cada historia es un mundo 📚</span>
+            <a href="{{ url_for('tiposlectura') }}" class="btn-aventura">Comenzar aventura leyendo</a>
+        </article>
+
+        <!-- Tarjeta de juegos para practicar el lenguaje -->
+        <article class="actividad actividad-morado">
+            <div class="icono-actividad"> 🎮 </div>
+            <span class="numero">02 / DIVERSIÓN</span>
+            <h3>Juegos</h3>
+            <p>Diviertete con palabras, acertijos y actividades de lenguaje.</p>
+            <span class="pie-tarjeta">¡Aprende jugando! 🎮</span>
+            <a href="{{ url_for('videojuegos_lengua') }}" class="btn-aventura"> 🎮 Ir a Videojuegos</a>
+        </article>
+
+        <!-- Tarjeta de ejercicios de escritura y gramática -->
+        <article class="actividad actividad-azul">
+            <div class="icono-actividad"> ✏️ </div>
+            <span class="numero">03 / CREATIVIDAD</span>
+            <h3>Ejercicios</h3>
+            <p>Practica ortografía, gramática, vocabulario y escritura.</p>
+            <span class="pie-tarjeta">Tus ideas tienen valor 💙</span>
+            <a href="{{ url_for('ejercicios_lengua') }}" class="btn-aventura"> 📚 Ejercicios</a>
+        </article>
+
+        <!-- Tarjeta de retos para poner a prueba los conocimientos -->
+        <article class="actividad actividad-naranja">
+            <div class="icono-actividad"> 🕑 </div>
+            <span class="numero">04 / DESAFÍO EXAMEN</span>
+            <h3>EXAMEN</h3>
+            <p>Resuelve acertijos, juega con las palabras y demuestra lo que has aprendido.</p>
+            <span class="pie-tarjeta">¡Atrévete a descubrir! 🔥</span>
+            <a href="{{ url_for('examen_lengua') }}" class="btn-aventura">Iniciar retos</a>
+            <div style="display:flex; gap:15px; margin-top:20px;">
+            
+</div>
+            </article>
+
+        </section>
+
+        <!-- Botón para volver a la selección de materias -->
+        <div class="centrado">
+            <a href="{{ url_for('index') }}" class="boton boton-rosa">→ Volver a las materias</a>
+        </div>
+    </main>
+</body>
+</html>

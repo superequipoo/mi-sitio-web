@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprensión - Vocabulario</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<header class="portada">
+    <h1>Comprensión <span>Vocabulario</span></h1>
+    <p>Bloque 3 - Si no sabes qué significa la palabra, el contexto te lo dice. Sin diccionario.</p>
+</header>
+
+<main class="contenido">
+
+    <!-- ========== BLOQUE 1 ========== -->
+    <section class="bloque bloque-naranja">
+        <h2>🔍 ¿Qué es Vocabulario en Contexto?</h2>
+        <p style="color:#94a3b8;">En el EXANI no te preguntan el significado de memoria, te preguntan qué significa ESA palabra EN ESE texto.</p>
+        
+        <h3>1. La fórmula del EXANI</h3>
+        <ul>
+            <li><b>No busques el significado de diccionario, busca el del texto</b></li>
+            <li>Texto: "El examen era tedioso, todos bostezaban"</li>
+            <li>No sabes qué es tedioso, pero todos bostezan → <b>tedioso = aburrido</b></li>
+        </ul>
+
+        <h3>2. Las 3 pistas que siempre hay</h3>
+        <ul>
+            <li><b>Sinónimo al lado:</b> "Estaba exhausto, muy cansado después de correr" → exhausto = cansado</li>
+            <li><b>Ejemplo:</b> "Comía alimentos frugales como pan y agua" → frugal = sencillo / poco</li>
+            <li><b>Contraste:</b> "No era rico, sino opulento" → opulento es lo contrario a rico? No, es más que rico</li>
+        </ul>
+
+        <h3>3. Truco para no fallar</h3>
+        <ul>
+            <li>Tapa la palabra difícil y lee la oración sin ella</li>
+            <li>¿Qué palabra pondrías tú ahí para que tenga sentido? Esa es la respuesta</li>
+            <li>Si la respuesta no encaja en la oración, está mal aunque suene bonita</li>
+        </ul>
+    </section>
+
+    <!-- ========== BLOQUE 2 ========== -->
+    <section class="bloque bloque-azul">
+        <h2>📚 Sinónimos y Antónimos - Los que más salen</h2>
+        
+        <h3>1. Sinónimos (significan lo mismo)</h3>
+        <ul>
+            <li><b>Feliz =</b> contento, alegre</li>
+            <li><b>Rápido =</b> veloz, ágil</li>
+            <li><b>Difícil =</b> complicado, arduo</li>
+            <li><b>Enojado =</b> furioso, molesto</li>
+        </ul>
+
+        <h3>2. Antónimos (significan lo contrario)</h3>
+        <ul>
+            <li><b>Feliz ≠</b> triste</li>
+            <li><b>Rápido ≠</b> lento</li>
+            <li><b>Claro ≠</b> oscuro / confuso</li>
+            <li><b>Valiente ≠</b> cobarde</li>
+        </ul>
+
+        <h3>3. Cuidado con las trampas del EXANI</h3>
+        <ul>
+            <li>❌ Te ponen una palabra que suena parecido pero no es: <b>"efímero" no es "enfermo"</b>, es "que dura poco"</li>
+            <li>❌ Te ponen el significado literal cuando el texto usa el figurado: "Tiene un corazón de oro" no es que sea de metal, es que es bueno</li>
+            <li>✅ Siempre vuelve a leer la oración completa con tu respuesta puesta</li>
+        </ul>
+    </section>
+
+    <!-- ========== EJEMPLOS ========== -->
+    <section class="bloque bloque-verde">
+        <h2>📖 Ejemplos Nivel EXANI</h2>
+
+        <div style="background:#111b36; padding:20px; border-radius:14px; margin-bottom:15px;">
+            <p style="color:#94a3b8; font-size:13px;">TEXTO EXANI</p>
+            <p>"El profesor explicó con <b>elocuencia</b>, todos entendieron y nadie se distrajo."</p>
+            <p style="margin-top:12px;"><b style="color:#00ff88">Pregunta:</b> ¿Qué significa elocuencia en este texto?</p>
+            <p><b style="color:white">Respuesta:</b> Que habla bien / con claridad, que convence.</p>
+            <p style="color:#94a3b8; font-size:12px; margin-top:5px;">Pista: todos entendieron + nadie se distrajo = habló bien</p>
+        </div>
+
+        <div style="background:#111b36; padding:20px; border-radius:14px;">
+            <p style="color:#94a3b8; font-size:13px;">TEXTO EXANI</p>
+            <p>"Después de la maratón quedó <b>exhausto</b>, no podía ni caminar."</p>
+            <p style="margin-top:12px;"><b style="color:#00ff88">Respuesta:</b> Muy cansado / agotado.</p>
+            <p style="color:#94a3b8; font-size:12px; margin-top:5px;">Pista: no podía ni caminar = cansadísimo</p>
+        </div>
+    </section>
+
+    <!-- ========== EJERCICIOS ========== -->
+    <section class="bloque">
+        <h2>✍️ Ejercicios de Vocabulario</h2>
+
+        <div class="pregunta-box">
+            <p style="font-size:13px; color:#94a3b8;">"El examen era tedioso, todos bostezaban"</p>
+            <p>¿Qué significa tedioso en este texto?</p>
+            <input class="ejercicio-input" placeholder="aburrido / difícil / largo">
+        </div>
+
+        <div class="pregunta-box">
+            <p>¿Sinónimo de <b>feliz</b>?</p>
+            <input class="ejercicio-input" placeholder="contento / triste">
+        </div>
+
+        <div class="pregunta-box">
+            <p>¿Antónimo de <b>rápido</b>?</p>
+            <input class="ejercicio-input" placeholder="">
+        </div>
+
+        <div class="pregunta-box">
+            <p style="font-size:13px; color:#94a3b8;">"Quedó exhausto después de correr 10 km"</p>
+            <p>¿Qué significa exhausto?</p>
+            <input class="ejercicio-input" placeholder="">
+        </div>
+
+        <div class="pregunta-box">
+            <p style="font-size:13px; color:#94a3b8;">"Su casa era humilde, pequeña y sencilla"</p>
+            <p>¿Qué significa humilde en este texto?</p>
+            <input class="ejercicio-input" placeholder="sencilla / pobre / fea">
+        </div>
+
+        <div class="pregunta-box">
+            <p>Si una palabra no la conoces, ¿qué debes hacer primero?</p>
+            <input class="ejercicio-input" placeholder="buscar en diccionario / usar el contexto">
+        </div>
+
+        <button class="btn-comprobar" id="btn-comprobar">Comprobar respuestas</button>
+        <div id="resultado" style="margin-top:15px; font-weight:800;"></div>
+    </section>
+
+</main>
+
+<a href="{{ url_for('ejercicios_comprension') }}" class="volver-orto">✦ Volver</a>
+
+<!-- CONEXIÓN CON EL JS -->
+<script src="{{ url_for('static', filename='js/vocabulario.js') }}"></script>
+
+</body>
+</html>

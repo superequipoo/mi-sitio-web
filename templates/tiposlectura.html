@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecturas - Mundo del Saber</title>
+    <script src="{{ url_for('static', filename='scripts/scripts.js') }}" defer></script>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+
+</head>
+<body>
+
+<h2 class="titulo-seccion">Explora tus géneros de lectura</h2>
+
+<div class="carrusel">
+    <button class="flecha flecha-izq" onclick="moverCarrusel(-1)">&#10094;</button>
+    <button class="flecha flecha-der" onclick="moverCarrusel(1)">&#10095;</button>
+
+    <div class="carrusel-pista" id="pista">
+
+        <div class="diapositiva">
+            <img src="{{ url_for('static', filename='img/fantasia.jpeg') }}" alt="Fantasía">
+            <span class="numero">01 / FANTASÍA</span>
+            <h3>Fantasía</h3>
+            <p>Mundos mágicos, criaturas asombrosas y aventuras imposibles.</p>
+            <a href="{{ url_for('fantasia') }}" class="btn-aventura">Leer fantasía</a>
+        </div>
+
+        <div class="diapositiva">
+            <img src="{{ url_for('static', filename='img/misterio.jpeg') }}" alt="Misterio">
+            <span class="numero">03 / MISTERIO</span>
+            <h3>Misterio</h3>
+            <p>Enigmas, pistas y secretos por descubrir.</p>
+            <a href="{{ url_for('misterio') }}" class="btn-aventura">Leer misterio</a>
+        </div>
+
+        <div class="diapositiva">
+            <img src="{{ url_for('static', filename='img/terror.jpeg') }}" alt="Terror">
+            <span class="numero">04 / TERROR</span>
+            <h3>Terror</h3>
+            <p>Historias escalofriantes que te pondrán los pelos de punta.</p>
+            <a href="{{ url_for('terror') }}" class="btn-aventura">Leer terror</a>
+        </div>
+
+        <div class="diapositiva">
+            <img src="{{ url_for('static', filename='img/aventura.jpeg') }}" alt="Aventura">
+            <span class="numero">05 / AVENTURA</span>
+            <h3>Aventura</h3>
+            <p>Historias emocionantes donde todo puede pasar.</p>
+            <a href="{{ url_for('aventura') }}" class="btn-aventura">Leer aventura</a>
+        </div>
+
+    </div>
+</div>
+
+<p id="resultado" style="margin-top:20px; font-weight:800;"></p>
+
+</body>
+</html>

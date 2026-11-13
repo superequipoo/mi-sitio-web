@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujeto y Predicado - Completo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<header class="portada">
+    <h1>Sujeto y <span>Predicado</span></h1>
+    <p>La base de toda oración. Si dominas esto, ya tienes el 50% de sintaxis ganado.</p>
+</header>
+
+<main class="contenido">
+
+    <!-- ========== BLOQUE SUJETO ========== -->
+    <section class="bloque bloque-naranja">
+        <h2>👤 ¿Qué es el Sujeto?</h2>
+        <p style="color:#94a3b8; margin-bottom:20px;">Es quién hace la acción. Siempre es un sustantivo, pronombre o grupo nominal.</p>
+        
+        <h3>1. Núcleo del sujeto</h3>
+        <ul>
+            <li>Siempre es sustantivo o pronombre: <b>Juan</b> come, <b>La casa</b> es bonita, <b>Ellos</b> juegan</li>
+            <li>Puede llevar complementos: <b>La casa vieja de mi abuela</b> se vendió</li>
+            <li>Truco: Si quitas todo lo extra, lo que queda es el núcleo: casa</li>
+        </ul>
+
+        <h3>2. Sujeto Tácito / Elíptico (el que más sale en EXANI)</h3>
+        <ul>
+            <li>No se escribe pero se entiende por el verbo</li>
+            <li><b>(Yo)</b> comí pizza, <b>(Nosotros)</b> fuimos al cine, <b>(Tú)</b> estudias mucho</li>
+            <li>Truco EXANI: Mira la terminación del verbo. ¿"comimos"? = nosotros. ¿"comiste"? = tú</li>
+        </ul>
+
+        <h3>3. Sujeto Compuesto vs Simple</h3>
+        <ul>
+            <li><b>Simple:</b> un núcleo → <b>Juan</b> juega</li>
+            <li><b>Compuesto:</b> dos o más núcleos → <b>Juan y María</b> juegan, <b>El perro y el gato</b> duermen</li>
+        </ul>
+    </section>
+
+    <!-- ========== BLOQUE PREDICADO ========== -->
+    <section class="bloque bloque-azul">
+        <h2>🔧 ¿Qué es el Predicado?</h2>
+        <p style="color:#94a3b8; margin-bottom:20px;">Es todo lo que se dice del sujeto. Empieza en el verbo.</p>
+
+        <h3>1. Predicado Verbal (el 90% de los casos)</h3>
+        <ul>
+            <li>Verbo de acción + complementos: Juan <b>corre rápido en el parque</b></li>
+            <li>María <b>comió pizza ayer</b></li>
+        </ul>
+
+        <h3>2. Predicado Nominal (con ser, estar, parecer)</h3>
+        <ul>
+            <li>Estructura: ser/estar/parecer + atributo: Juan <b>es inteligente</b></li>
+            <li>María <b>está cansada</b>, Eso <b>parece fácil</b></li>
+            <li>Truco para diferenciar: Si puedes cambiar "es" por "está" o "parece" y sigue teniendo sentido, es nominal</li>
+        </ul>
+
+        <h3>3. ¿Cómo encontrarlos rápido?</h3>
+        <ul>
+            <li>Paso 1: Busca el verbo</li>
+            <li>Paso 2: Pregunta ¿quién? al verbo → eso es el sujeto</li>
+            <li>Paso 3: Todo lo demás → predicado</li>
+        </ul>
+    </section>
+
+    <!-- ========== TRUCO FINAL ========== -->
+    <section class="bloque" style="border: 2px dashed #ff9500;">
+        <h2>🧠 Truco para el examen</h2>
+        <p style="color:#94a3b8; line-height:1.8">
+        <b style="color:white">1. Orden lógico:</b> Sujeto + Verbo + Complemento. Ej: Los niños (S) juegan (V) en el parque (complemento)<br><br>
+        <b style="color:white">2. Si el verbo está en plural, el sujeto también:</b> "Juegan los niños" - Juegan está en plural, entonces el sujeto es "los niños"<br><br>
+        <b style="color:white">3. Cuidado con el sujeto al final:</b> EXANI te pone "En el parque juegan los niños" para confundirte. El sujeto sigue siendo "los niños"
+        </p>
+    </section>
+
+    <!-- ========== EJERCICIOS ========== -->
+    <section class="bloque">
+        <h2>✍️ Ejercicios Prácticos</h2>
+        <p style="color:#94a3b8; margin-bottom:20px;">Escribe tu respuesta y comprueba. Se pondrá verde si está bien.</p>
+
+        <div class="pregunta-box">
+            <p>1. En "Los niños juegan en el parque" ¿Cuál es el sujeto completo?</p>
+            <input class="ejercicio-input" placeholder="Ej: Los niños">
+        </div>
+
+        <div class="pregunta-box">
+            <p>2. "Fuimos al cine ayer" ¿Qué tipo de sujeto es?</p>
+            <input class="ejercicio-input" placeholder="tácito / expreso / compuesto">
+        </div>
+
+        <div class="pregunta-box">
+            <p>3. "María es muy inteligente" ¿Predicado verbal o nominal?</p>
+            <input class="ejercicio-input" placeholder="verbal / nominal">
+        </div>
+
+        <div class="pregunta-box">
+            <p>4. ¿Cuál es el núcleo del sujeto en "La casa vieja de mi abuela se vendió"?</p>
+            <input class="ejercicio-input" placeholder="Una palabra">
+        </div>
+
+        <div class="pregunta-box">
+            <p>5. "Ana y Luis bailan toda la noche" ¿Sujeto simple o compuesto?</p>
+            <input class="ejercicio-input" placeholder="simple / compuesto">
+        </div>
+
+        <button class="btn-comprobar" id="btn-comprobar">Comprobar respuestas</button>
+        <div id="resultado" style="margin-top:15px; font-weight:800;"></div>
+    </section>
+
+</main>
+
+<a href="{{ url_for('ejercicios_gramatica') }}" class="volver-orto">✦ Volver</a>
+
+<!-- CONEXIÓN CON EL JS -->
+<script src="{{ url_for('static', filename='js/sujeto_predicado.js') }}"></script>
+
+</body>
+</html>

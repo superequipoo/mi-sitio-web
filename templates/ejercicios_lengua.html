@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios | Lengua</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+<header><h2>APRENDE <span>MAS</span> // EJERCICIOS</h2></header>
+<div class="retos-container ejercicios-header">
+    <a href="{{ url_for('lengua') }}" class="volver-link">✦ Volver</a>
+    <h1>Banco de Ejercicios 📚</h1>
+    <p>Lengua y Comunicación - Secundaria / Preparatoria</p>
+
+    <div class="grid-ejercicios">
+        <div class="card-ejercicio"><span class="badge medio">MEDIO</span><h3>🔧 Ortografia</h3><p class="desc">Sujeto, predicado, OD, OI y subordinadas.</p><p class="meta">⏱ 20 min | ✦ 15 ejercicios</p><a href="{{ url_for('ejercicios_ortografia')}}" class="btn-ejercicio">RESOLVER →</a></div>
+        <div class="card-ejercicio"><span class="badge medio">MEDIO</span><h3>🔧 Gramática</h3><p class="desc">Sujeto, predicado, OD, OI y subordinadas.</p><p class="meta">⏱ 20 min | ✦ 15 ejercicios</p><a href="{{ url_for('ejercicios_gramatica')}}" class="btn-ejercicio">RESOLVER →</a></div>
+        <div class="card-ejercicio"><span class="badge medio">MEDIO</span><h3>📖 Comprensión</h3><p class="desc">Textos tipo EXANI-II y COMIPEMS.</p><p class="meta">⏱ 25 min | ✦ 10 lecturas</p><a href="{{ url_for('ejercicios_comprension')}}" class="btn-ejercicio">RESOLVER →</a></div>
+        <div class="card-ejercicio"><span class="badge facil">BÁSICO</span><h3>💬 Semántica</h3><p class="desc">Sinónimos, antónimos y homófonos.</p><p class="meta">⏱ 15 min | ✦ 18 ejercicios</p><a href="{{ url_for('ejercicios_semantica')}}" class="btn-ejercicio">RESOLVER →</a></div>
+        <div class="card-ejercicio"><span class="badge dificil">DIFÍCIL</span><h3>🎭 Literatura</h3><p class="desc">Géneros, figuras retóricas y autores.</p><p class="meta">⏱ 20 min | ✦ 15 ejercicios</p><a href="{{ url_for('ejercicios_literatura')}}" class="btn-ejercicio">RESOLVER →</a></div>
+        <div class="card-ejercicio"><span class="badge dificil">DIFÍCIL</span><h3>✍️ Redacción</h3><p class="desc">Argumentativo, expositivo y conectores.</p><p class="meta">⏱ 30 min | ✦ 12 ejercicios</p><a href="{{ url_for('ejercicios_redaccion')}}" class="btn-ejercicio">RESOLVER →</a></div>
+    </div>
+</div>
+</body>
+</html>

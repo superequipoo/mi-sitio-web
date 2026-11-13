@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oración Simple y Compuesta - Completo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<header class="portada">
+    <h1>Oración <span>Simple y Compuesta</span></h1>
+    <p>Una idea vs varias ideas unidas. Aquí es donde se define tu calificación.</p>
+</header>
+
+<main class="contenido">
+
+    <!-- ========== SIMPLE ========== -->
+    <section class="bloque bloque-naranja">
+        <h2>🔹 Oración Simple - 1 solo verbo</h2>
+        <p style="color:#94a3b8; margin-bottom:15px;">Una sola idea, un solo verbo conjugado.</p>
+        
+        <h3>Cómo identificarla</h3>
+        <ul>
+            <li>Cuenta los verbos: si solo hay 1, es simple</li>
+            <li><b>Juan come pizza</b> → 1 verbo (come) = simple</li>
+            <li><b>María estudia mucho para el examen</b> → 1 verbo (estudia) = simple</li>
+            <li><b>Los niños juegan en el parque</b> → 1 verbo (juegan) = simple</li>
+        </ul>
+
+        <h3>Truco</h3>
+        <ul>
+            <li>Aunque sea larga, si solo tiene 1 verbo, sigue siendo simple</li>
+            <li>Ej: <b>El perro grande de mi abuela que vive en Puebla</b> duerme → Solo "duerme" es verbo = simple</li>
+        </ul>
+    </section>
+
+    <!-- ========== COMPUESTA ========== -->
+    <section class="bloque bloque-azul">
+        <h2>🔗 Oración Compuesta - 2 o más verbos</h2>
+        <p style="color:#94a3b8; margin-bottom:15px;">Varias ideas unidas. Es donde te ponen los nexos.</p>
+
+        <h3>1. Coordinadas - Mismo nivel, mismo peso</h3>
+        <ul>
+            <li>Dos ideas iguales unidas por un nexo</li>
+            <li><b>Copulativas (suman): y, e, ni</b> → Juan estudia <b>y</b> trabaja / No estudia <b>ni</b> trabaja</li>
+            <li><b>Disyuntivas (eligen): o, u</b> → ¿Estudias <b>o</b> trabajas? / ¿Vienes <b>u</b> otro día?</li>
+            <li><b>Adversativas (contraste): pero, mas, sino, sin embargo</b> → Quiero ir, <b>pero</b> no puedo / No es bonito, <b>sino</b> feo</li>
+            <li>Truco: Puedes separarlas y siguen teniendo sentido: "Juan estudia. María trabaja."</li>
+        </ul>
+
+        <h3>2. Subordinadas - Una depende de otra</h3>
+        <ul>
+            <li>Una oración no tiene sentido sola, necesita a la otra</li>
+            <li><b>Quiero que vengas</b> → "que vengas" no tiene sentido sola, depende de "quiero"</li>
+            <li>Nexos que debes memorizar: <b>que, porque, aunque, si, cuando, donde, como</b></li>
+            <li>Estudio <b>porque</b> quiero pasar / Iré <b>aunque</b> llueva / No sé <b>si</b> vendrá</li>
+            <li>Truco EXANI: Si quitas una parte y la otra queda incompleta, es subordinada</li>
+        </ul>
+
+        <h3>3. Yuxtapuestas - Sin nexo, solo signos</h3>
+        <ul>
+            <li>No usan nexo, usan coma, punto y coma o dos puntos</li>
+            <li>Llegué, vi, vencí.</li>
+            <li>Hace frío; me quedo en casa.</li>
+            <li>Truco: Si puedes poner "y" o "pero" entre ellas, es yuxtapuesta</li>
+        </ul>
+    </section>
+
+    <!-- ========== TABLA ========== -->
+    <section class="bloque bloque-verde">
+        <h2>📊 Tabla para que no te confundas</h2>
+        <div style="display:grid; gap:10px; margin-top:15px;">
+            <div style="background:#111b36; padding:14px; border-radius:10px; display:flex; justify-content:space-between;">
+                <span><b style="color:#00ff88">Simple</b></span><span style="color:#94a3b8;">1 verbo</span><span style="color:white;">Juan come</span>
+            </div>
+            <div style="background:#111b36; padding:14px; border-radius:10px; display:flex; justify-content:space-between;">
+                <span><b style="color:#0d8bff">Coordinada</b></span><span style="color:#94a3b8;">y, o, pero</span><span style="color:white;">Juan come y bebe</span>
+            </div>
+            <div style="background:#111b36; padding:14px; border-radius:10px; display:flex; justify-content:space-between;">
+                <span><b style="color:#ff9500">Subordinada</b></span><span style="color:#94a3b8;">que, porque, si</span><span style="color:white;">Quiero que vengas</span>
+            </div>
+            <div style="background:#111b36; padding:14px; border-radius:10px; display:flex; justify-content:space-between;">
+                <span><b style="color:white">Yuxtapuesta</b></span><span style="color:#94a3b8;">, ; :</span><span style="color:white;">Llegué, vi, vencí</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EJERCICIOS ========== -->
+    <section class="bloque">
+        <h2>✍️ Ejercicios - Nivel EXANI</h2>
+
+        <div class="pregunta-box">
+            <p>1. "Juan estudia y María trabaja" ¿Simple o compuesta?</p>
+            <input class="ejercicio-input" placeholder="simple / compuesta">
+        </div>
+
+        <div class="pregunta-box">
+            <p>2. "Quiero ir pero no puedo" ¿Qué tipo de compuesta es?</p>
+            <input class="ejercicio-input" placeholder="coordinada / subordinada / yuxtapuesta">
+        </div>
+
+        <div class="pregunta-box">
+            <p>3. "Llegué, vi, vencí" ¿Qué tipo es?</p>
+            <input class="ejercicio-input" placeholder="">
+        </div>
+
+        <div class="pregunta-box">
+            <p>4. ¿Cuántos verbos tiene "María dijo que vendría mañana"?</p>
+            <input class="ejercicio-input" placeholder="1 o 2">
+        </div>
+
+        <div class="pregunta-box">
+            <p>5. "Estudio porque quiero pasar el EXANI" ¿Coordinada o subordinada?</p>
+            <input class="ejercicio-input" placeholder="">
+        </div>
+
+        <div class="pregunta-box">
+            <p>6. "No fui a la fiesta, estaba enfermo" ¿Qué tipo es?</p>
+            <input class="ejercicio-input" placeholder="">
+        </div>
+
+        <button class="btn-comprobar" id="btn-comprobar">Comprobar respuestas</button>
+        <div id="resultado" style="margin-top:15px; font-weight:800;"></div>
+    </section>
+
+</main>
+
+<a href="{{ url_for('ejercicios_gramatica') }}" class="volver-orto">✦ Volver</a>
+
+<!-- CONEXIÓN CON EL JS -->
+<script src="{{ url_for('static', filename='js/oracion_simple_compuesta.js') }}"></script>
+
+</body>
+</html>

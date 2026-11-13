@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Veloz - Matemáticas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<div class="portada">
+    <span class="etiqueta">MATEMÁTICAS // VIDEOJUEGO</span>
+    <h1>CÁLCULO <span>VELOZ</span></h1>
+    <p>3ero Secundaria y Prepa | EXANI II - ¿Cuántas puedes hacer en 60 segundos?</p>
+</div>
+
+<div class="contenido">
+    <div class="bloque" style="text-align:center;">
+
+        <p style="font-weight:800; font-size:16px;">
+            Tiempo: <span id="tiempo">60</span>s |
+            Puntos: <span id="puntos">0</span> |
+            Racha: <span id="racha">0</span> 🔥
+        </p>
+        <p id="tipo" style="color:#8aa0c6;">Nivel: EXANI II</p>
+
+        <h2 id="pregunta" style="font-size:32px; margin:25px 0;">Presiona JUGAR</h2>
+
+        <div id="opciones" style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
+            <button id="btn-jugar" class="btn-comprobar">JUGAR ▶</button>
+        </div>
+
+        <br>
+        <p style="color:#8aa0c6; font-size:13px;">Elige tu nivel antes de jugar:</p>
+        <p>
+            <button id="btn-secundaria" class="btn-aventura">Secundaria 3ero</button>
+            <button id="btn-prepa" class="btn-aventura">Prepa</button>
+            <button id="btn-exani" class="btn-aventura">EXANI</button>
+        </p>
+
+        <p id="final" style="display:none; font-weight:800; font-size:18px; margin-top:20px;"></p>
+        <p id="resultado" style="margin-top:10px; font-weight:800;"></p>
+
+    </div>
+</div>
+
+<a href="{{ url_for('juegos_matematicas') }}" class="volver-orto">✦ Volver</a>
+
+<!-- CONEXIÓN CON EL JS -->
+<script src="{{ url_for('static', filename='js/calculo_veloz.js') }}"></script>
+
+</body>
+</html>

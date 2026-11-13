@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comprensión Lectora | Ejercicios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body style="background:#0a192f; margin:0; font-family:sans-serif;">
+
+<header style="padding:20px; border-bottom:1px solid #112240;">
+    <h2 style="color:white; margin:0;">APRENDE <span style="color:#00aaff;">MAS</span> // COMPRENSIÓN</h2>
+</header>
+
+<div class="comprension-wrapper">
+    <a href="{{ url_for('ejercicios_lengua') }}" class="volver-comp">✦ Volver al Banco</a>
+
+    <div class="comprension-header" style="margin-top:20px;">
+        <span class="sobrelinea">BLOQUE 3 DE 6 / MEDIO</span>
+        <h1>Comprensión Lectora 📖</h1>
+        <p>Aprende a entender lo que lees, no solo a leerlo. Clave para EXANI y COMIPEMS.</p>
+    </div>
+
+    <div class="grid-comprension">
+
+        <div class="card-comp borde-azul">
+            <span class="badge-comp medio">NIVEL 1</span>
+            <h3>🎯 Idea Principal</h3>
+            <p class="desc">Identifica tema, idea central, ideas secundarias y resumen.</p>
+            <p class="meta">⏱ 10 min | ✦ 3 lecturas | 12 preguntas</p>
+            <a href="{{ url_for('comprension_idea_principal')}}" class="btn-comp">Leer y responder →</a>
+        </div>
+
+        <div class="card-comp borde-morado">
+            <span class="badge-comp dificil">NIVEL 2</span>
+            <h3>🧠 Inferencia</h3>
+            <p class="desc">Lo que no está escrito pero se entiende. Deducción y suposición.</p>
+            <p class="meta">⏱ 12 min | ✦ 3 lecturas | 12 preguntas</p>
+            <a href="{{ url_for('comprension_inferencia')}}" class="btn-comp">Leer y responder →</a>
+        </div>
+
+        <div class="card-comp borde-verde">
+            <span class="badge-comp facil">NIVEL 1</span>
+            <h3>📚 Vocabulario por Contexto</h3>
+            <p class="desc">Adivina el significado de una palabra sin usar diccionario.</p>
+            <p class="meta">⏱ 8 min | ✦ 15 palabras</p>
+            <a href="{{ url_for('comprension_vocabulario')}}" class="btn-comp lectura">Practicar →</a>
+        </div>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

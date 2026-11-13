@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Semántica | Ejercicios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body style="background:#0a192f; margin:0; font-family:sans-serif;">
+
+<header style="padding:20px; border-bottom:1px solid #112240;">
+    <h2 style="color:white; margin:0;">APRENDE <span style="color:#a855f7;">MAS</span> // SEMÁNTICA</h2>
+</header>
+
+<div class="semantica-wrapper">
+    <a href="{{ url_for('ejercicios_lengua') }}" class="volver-sem">✦ Volver al Banco</a>
+
+    <div class="semantica-header" style="margin-top:20px;">
+        <span class="sobrelinea">BLOQUE 4 DE 6 / BÁSICO</span>
+        <h1>Semántica y Vocabulario 💬</h1>
+        <p>Significado de palabras, relaciones y matices. Muy preguntado en EXANI-II.</p>
+    </div>
+
+    <div class="grid-semantica">
+
+        <div class="card-sem borde-morado">
+            <span class="badge-sem facil">NIVEL 1</span>
+            <h3>🔄 Sinónimos y Antónimos</h3>
+            <p class="desc">Total, parcial y contextual. 18 ejercicios para ampliar vocabulario.</p>
+            <p class="meta">⏱ 10 min | ✦ 18 preguntas</p>
+            <a href="{{ url_for('sinonimos_antonimos')}}" class="btn-sem">Empezar →</a>
+        </div>
+
+        <div class="card-sem borde-amarillo">
+            <span class="badge-sem dificil">NIVEL 2</span>
+            <h3>👂 Homófonos y Parónimos</h3>
+            <p class="desc">Vaya/valla, tuvo/tubo, aptitud/actitud, revelar/rebelar.</p>
+            <p class="meta">⏱ 12 min | ✦ 20 preguntas | COMIPEMS</p>
+            <a href="{{ url_for('homonimos_paronimos')}}" class="btn-sem">Empezar →</a>
+        </div>
+
+        <div class="card-sem borde-verde">
+            <span class="badge-sem facil">NIVEL 1</span>
+            <h3>🌱 Campo Semántico</h3>
+            <p class="desc">Familia de palabras, campo léxico y campo semántico.</p>
+            <p class="meta">⏱ 8 min | ✦ 15 preguntas</p>
+            <a href="{{ url_for('campo_sematico')}}" class="btn-sem">Empezar →</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

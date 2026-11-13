@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Polisemia y Campo Semántico - Semántica</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<div class="portada">
+    <span class="etiqueta">BLOQUE 3 // SEMÁNTICA</span>
+    <h1>POLISEMIA Y <span>CAMPO SEMÁNTICO</span></h1>
+    <p>Una palabra, muchos significados + palabras que van juntas</p>
+</div>
+
+<div class="contenido">
+
+    <div class="bloque">
+        <h2>1. POLISEMIA - Una palabra, varios significados</h2>
+        <p style="color:#8aa0c6;">Misma palabra, significados relacionados entre sí. Depende del contexto.</p>
+
+        <h3>Ejemplos que SIEMPRE salen en EXANI</h3>
+        <ul>
+            <li><b>BANCO:</b> Banco de sentarse / Banco de dinero / Banco de peces -> todo es "conjunto donde se guarda/apoya"</li>
+            <li><b>GATO:</b> Animal / Herramienta para levantar coche / Persona de ojos</li>
+            <li><b>CAPITAL:</b> Ciudad capital / Dinero capital / Mayúscula capital</li>
+            <li><b>PLANTA:</b> Planta vegetal / Planta del pie / Planta industrial / Planta de luz</li>
+            <li><b>Sierra:</b> Herramienta / Cadena montañosa</li>
+            <li><b>Hoja:</b> Hoja de árbol / Hoja de papel / Hoja de cuchillo</li>
+        </ul>
+
+        <div class="pregunta-box">
+            <b>DIFERENCIA CLAVE CON HOMÓNIMOS:</b><br>
+            Polisemia = significados PARECIDOS con origen común (banco asiento y banco dinero vienen de "banca" italiana)<br>
+            Homonimia = significados NADA que ver, coincidencia (ola mar y hola saludo)
+            <br><br>
+            <b>EXANI no te pide distinguir, solo reconocer que es polisémica</b>
+        </div>
+    </div>
+
+    <div class="bloque">
+        <h2>2. CAMPO SEMÁNTICO - Familia de palabras por tema</h2>
+        <p style="color:#8aa0c6;">Conjunto de palabras que hablan del mismo tema.</p>
+
+        <h3>Ejemplos fáciles</h3>
+        <ul>
+            <li><b>Campo semántico de FÚTBOL:</b> balón, portería, gol, árbitro, cancha</li>
+            <li><b>Campo semántico de ESCUELA:</b> maestro, alumno, pizarrón, tarea, examen</li>
+            <li><b>Campo semántico de MÉDICO:</b> estetoscopio, paciente, bisturí, hospital</li>
+            <li><b>Campo semántico de COLORES:</b> rojo, azul, verde, amarillo</li>
+        </ul>
+
+        <h3>Truco EXANI</h3>
+        <ul>
+            <li>Te dan 4 palabras y una no pertenece: <br>
+                rosa, clavel, perro, tulipán -> <b>perro</b> no es campo semántico de flores</li>
+            <li><b>O te piden incluir:</b> "¿Qué palabra pertenece al campo semántico de cocina?"</li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h2>3. FAMILIA LÉXICA vs CAMPO SEMÁNTICO (te confunden)</h2>
+        <ul>
+            <li><b>Familia léxica:</b> Misma raíz -> pan, panadero, panadería, panecito</li>
+            <li><b>Campo semántico:</b> Mismo tema pero diferente raíz -> pan, mantequilla, leche, jamón (desayuno)</li>
+        </ul>
+
+        <h3>Otros conceptos rápidos que vienen juntos</h3>
+        <ul>
+            <li><b>Denotación:</b> Significado literal de diccionario (perro = animal canino)</li>
+            <li><b>Connotación:</b> Significado figurado/emocional (perro = insulto, fiel)</li>
+            <li><b>Ej:</b> "Eres un sol" denotación = estrella, connotación = eres lindo/brillas</li>
+        </ul>
+    </div>
+
+    <div class="bloque">
+        <h2>🎮 EJERCICIOS TÁCTICOS - 6 PREGUNTAS</h2>
+
+        <div class="pregunta-box">
+            <p><b>1. "Fui al banco a sentarme y luego al banco a sacar dinero" la palabra banco es:</b></p>
+            <input type="text" class="ejercicio-input" id="p1" placeholder="polisemia, homonimia...">
+        </div>
+
+        <div class="pregunta-box">
+            <p><b>2. De estas, ¿cuál NO pertenece al campo semántico de mar? ola, arena, libro, pez</b></p>
+            <input type="text" class="ejercicio-input" id="p2" placeholder="...">
+        </div>
+
+        <div class="pregunta-box">
+            <p><b>3. Pan, panadero, panadería, panificadora es: familia léxica o campo semántico?</b></p>
+            <input type="text" class="ejercicio-input" id="p3" placeholder="...">
+        </div>
+
+        <div class="pregunta-box">
+            <p><b>4. "Eres una serpiente" si lo digo literal (reptil) es denotación o connotación? Y si es insulto?</b></p>
+            <input type="text" class="ejercicio-input" id="p4" placeholder="literal es... insulto es...">
+        </div>
+
+        <div class="pregunta-box">
+            <p><b>5. Sierra (herramienta) y sierra (montaña) es ejemplo de:</b></p>
+            <input type="text" class="ejercicio-input" id="p5" placeholder="polisemia, homonimia...">
+        </div>
+
+        <div class="pregunta-box">
+            <p><b>6. Menciona 3 palabras del campo semántico de HOSPITAL</b></p>
+            <input type="text" class="ejercicio-input" id="p6" placeholder="...">
+        </div>
+
+        <button class="btn-comprobar" id="btn-comprobar">COMPROBAR MISIÓN</button>
+        <p id="resultado" style="margin-top:20px; font-weight:800;"></p>
+    </div>
+
+</div>
+
+<a href="{{ url_for('ejercicios_semantica') }}" class="volver-orto">✦ Volver</a>
+
+<!-- CONEXIÓN CON EL JS -->
+<script src="{{ url_for('static', filename='js/policemia_campo_semantico.js') }}"></script>
+
+</body>
+</html>

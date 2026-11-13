@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Literatura | Ejercicios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body style="background:#0a192f; margin:0; font-family:sans-serif;">
+
+<header style="padding:20px; border-bottom:1px solid #112240;">
+    <h2 style="color:white; margin:0;">APRENDE <span style="color:#ff6b6b;">MAS</span> // LITERATURA</h2>
+</header>
+
+<div class="literatura-wrapper">
+    <a href="{{ url_for('ejercicios_lengua') }}" class="volver-lit">✦ Volver al Banco</a>
+
+    <div class="literatura-header" style="margin-top:20px;">
+        <span class="sobrelinea">BLOQUE 5 DE 6 / DIFÍCIL</span>
+        <h1>Literatura Universal 🎭</h1>
+        <p>Géneros, figuras retóricas, corrientes y autores que sí salen en EXANI-II.</p>
+    </div>
+
+    <div class="grid-literatura">
+
+        <div class="card-lit borde-rojo">
+            <span class="badge-lit facil">NIVEL 1</span>
+            <h3>📚 Géneros Literarios</h3>
+            <p class="desc">Narrativo, lírico, dramático y didáctico. Subgéneros y ejemplos.</p>
+            <p class="meta">⏱ 10 min | ✦ 15 preguntas</p>
+            <a href="{{ url_for('generos_literarios')}}" class="btn-lit">Empezar →</a>
+        </div>
+
+        <div class="card-lit borde-morado">
+            <span class="badge-lit medio">NIVEL 2</span>
+            <h3>✨ Figuras Retóricas</h3>
+            <p class="desc">Metáfora, símil, hipérbole, anáfora, metonimia y personificación.</p>
+            <p class="meta">⏱ 12 min | ✦ 18 preguntas | EXANI</p>
+            <a href="{{ url_for('figuras_retoricas')}}" class="btn-lit">Empezar →</a>
+        </div>
+
+        <div class="card-lit borde-amarillo">
+            <span class="badge-lit dificil">NIVEL 3</span>
+            <h3>⏳ Corrientes Literarias</h3>
+            <p class="desc">Barroco, romanticismo, realismo, modernismo y boom latinoamericano.</p>
+            <p class="meta">⏱ 15 min | ✦ 15 preguntas</p>
+            <a href="{{ url_for('corrientes_literarias')}}" class="btn-lit">Empezar →</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

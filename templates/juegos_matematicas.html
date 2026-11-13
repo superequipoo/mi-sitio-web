@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos | Matemáticas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<nav class="barra">
+    <a href="{{ url_for('index') }}" class="marca">
+        <span class="logo">✦</span> Mundo del Saber
+    </a>
+    <a href="{{ url_for('matematicas') }}" class="enlace-inicio"> Matemáticas</a>
+</nav>
+
+<header class="portada portada-azul-juegos">
+    <span class="etiqueta"> 01 / DIVERSIÓN - JUEGOS</span>
+    <h1>¡Juega con los<br><span>Números!</span></h1>
+    <p>Aprende mediante juegos matemáticos y pon a prueba tu rapidez mental.</p>
+    <div class="insignia"> 🎮 ¡Aprender también es jugar!</div>
+</header>
+
+<main class="contenido">
+    <div class="titulo-seccion">
+        <span class="sobrelinea">ZONA DE JUEGOS</span>
+        <h2>¡Elige tu juego!</h2>
+        <p>6 juegos para volverte rápido y divertirte con los números.</p>
+    </div>
+
+    <section class="rejilla-actividades">
+
+        <!-- Juego 1 -->
+        <article class="actividad actividad-azul">
+            <div class="icono-actividad"> ⚡ </div>
+            <span class="numero">01 / RAPIDEZ</span>
+            <h3>Cálculo Veloz</h3>
+            <p>Resuelve 20 operaciones antes de que se acabe el tiempo. ¡Rápido!</p>
+            <span class="pie-tarjeta">⏱ 60 seg | Récord: 0</span>
+            <a href="{{ url_for('calculo_veloz')}}" class="btn-aventura">¡Jugar ahora! →</a>
+        </article>
+
+        <!-- Juego 3 -->
+        <article class="actividad actividad-amarilla">
+            <div class="icono-actividad"> 🎯 </div>
+            <span class="numero">03 / PUNTERÍA</span>
+            <h3>Atrapa el Resultado</h3>
+            <p>Aparece una operación y debes atrapar la respuesta correcta.</p>
+            <span class="pie-tarjeta">⏱ Infinito | Puntos x acierto</span>
+            <a href="{{ url_for('atrapa_el_resultado')}}" class="btn-aventura">¡Jugar ahora! →</a>
+        </article>
+
+        <!-- Juego 4 -->
+        <article class="actividad actividad-morado">
+            <div class="icono-actividad"> 🧠 </div>
+            <span class="numero">04 / RETO</span>
+            <h3>Rompe la Ecuación</h3>
+            <p>Encuentra el número perdido para completar la ecuación.</p>
+            <span class="pie-tarjeta">⏱ 10 puzzles | EXANI tipo</span>
+            <a href="{{ url_for('rompe_la_ecuacion')}}" class="btn-aventura">¡Jugar ahora! →</a>
+        </article>
+
+    </section>
+
+    <div class="centrado">
+        <a href="{{ url_for('matematicas') }}" class="boton boton-azul">→ Volver a Matemáticas</a>
+    </div>
+</main>
+
+</body>
+</html>

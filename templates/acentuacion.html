@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acentuación - Completo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<header class="portada">
+    <h1>Uso de la <span>Acentuación</span></h1>
+    <p>Agudas, graves, esdrújulas y diacríticos. Con este ya no te quitan puntos en el examen :3</p>
+</header>
+
+<main class="contenido">
+
+    <!-- ========== VIDEO ========== -->
+    <section class="bloque" style="border:2px solid #ff2d8b; padding:15px;">
+        <h2 style="margin-bottom:12px;">▶ Video de Instrucción // Mira antes de leer</h2>
+        <video controls style="width:100%; border:2px solid #1e293b; background:black;">
+             <iframe width="100%" height="400" src="https://youtu.be/UxrvC_9vwKQ?si=SxZUUsumGBTzr_Kz" frameborder="0" allowfullscreen></iframe>
+            Tu navegador no soporta video.
+        </video>
+    </section>
+
+    <!-- ========== SEPARAR EN SÍLABAS ========== -->
+    <section class="bloque bloque-rosa">
+        <h2>🔍 Paso 1: ¿Dónde está la sílaba fuerte?</h2>
+        <h3>Truco rápido para encontrarla:</h3>
+        <ul>
+            <li>Di la palabra gritando: ca- <b>MION</b>, <b>ME</b> -sa, <b>MUR</b> -cie-la-go</li>
+            <li>La que suena más fuerte es la sílaba tónica</li>
+        </ul>
+        <table class="tabla">
+            <tr><th>Última</th><th>Penúltima</th><th>Antepenúltima</th></tr>
+            <tr><td>can- <b>ción</b></td><td>me- <b>sa</b></td><td><b>múr</b> -cie-la-go</td></tr>
+            <tr><td>re- <b>loj</b></td><td>ár- <b>bol</b></td><td><b>pá</b> -ja-ro</td></tr>
+        </table>
+    </section>
+
+    <!-- ========== 4 TIPOS ========== -->
+    <section class="bloque bloque-amarillo">
+        <h2>⚡ Paso 2: Los 4 tipos (esto te lo preguntan tal cual)</h2>
+
+        <h3>1. AGUDAS - Se acentúan si terminan en N, S o VOCAL</h3>
+        <ul>
+            <li>Fuerza en la <b>última</b> sílaba: can<b>ción</b>, re<b>loj</b>, co<b>mió</b></li>
+            <li>✅ Con tilde: can<b>ción</b>, sofá, bebés, compás (terminan en N, S, vocal)</li>
+            <li>❌ Sin tilde: reloj, cantar, feliz (terminan en consonante que no es N ni S)</li>
+        </ul>
+
+        <h3>2. GRAVES O LLANAS - Se acentúan si NO terminan en N, S o VOCAL</h3>
+        <ul>
+            <li>Fuerza en la <b>penúltima</b> sílaba: <b>ár</b>bol, <b>lápiz</b>, <b>mesa</b></li>
+            <li>✅ Con tilde: <b>ár</b>bol, <b>lápiz</b>, <b>cárcel</b> (NO terminan en N,S,vocal)</li>
+            <li>❌ Sin tilde: mesa, casa, examen, silla (SÍ terminan en N,S,vocal)</li>
+        </ul>
+
+        <h3>3. ESDRÚJULAS - SIEMPRE llevan tilde</h3>
+        <ul>
+            <li>Fuerza en la <b>antepenúltima</b>: <b>mú</b>sica, <b>pájaro</b>, <b>miércoles</b>, <b>exámenes</b></li>
+            <li><b>¡TODAS llevan tilde siempre!</b> No hay excepción</li>
+        </ul>
+
+        <h3>4. SOBRESDRÚJULAS - SIEMPRE llevan tilde</h3>
+        <ul>
+            <li>Fuerza antes de la antepenúltima: <b>cómprame</b>lo, <b>dí</b>gaselo, <b>tráigame</b>lo</li>
+            <li><b>¡TODAS llevan tilde siempre!</b></li>
+        </ul>
+    </section>
+
+    <!-- ========== HIATOS Y DIPTONGOS ========== -->
+    <section class="bloque bloque-verde">
+        <h2>💚 Paso 3: El truco que te salva - Hiatos</h2>
+        <h3>Cuando una vocal cerrada (i,u) suena fuerte junto a una abierta (a,e,o), lleva tilde aunque sea grave</h3>
+        <ul>
+            <li>Ma<b>í</b>a, ba<b>ú</b>l, ra<b>í</b>z, o<b>í</b>do, sonre<b>í</b>r, r<b>í</b>o</li>
+            <li>Se rompe el diptongo: ma-rí-a (3 sílabas), no es una sola</li>
+            <li>Si no llevara tilde diría "maria" junto, por eso necesita tilde para separarlo</li>
+        </ul>
+    </section>
+
+    <!-- ========== ACENTO DIACRÍTICO ========== -->
+    <section class="bloque bloque-morado">
+        <h2>💜 Paso 4: Acento Diacrítico - Las gemelas tramposas</h2>
+        <p style="color:#94a3b8; margin-bottom:10px">Misma palabra, diferente significado. La tilde cambia todo.</p>
+        <table class="tabla">
+            <tr><th>Sin tilde</th><th>Con tilde</th><th>Ejemplo</th></tr>
+            <tr><td>tu (posesivo)</td><td><b>tú</b> (persona)</td><td>tu casa es bonita / tú eres bonita</td></tr>
+            <tr><td>el (artículo)</td><td><b>él</b> (persona)</td><td>el perro / él es mi amigo</td></tr>
+            <tr><td>mi (posesivo)</td><td><b>mí</b> (persona)</td><td>mi libro / para mí</td></tr>
+            <tr><td>te (pronombre)</td><td><b>té</b> (bebida)</td><td>te dije / toma té</td></tr>
+            <tr><td>se (pronombre)</td><td><b>sé</b> (de saber)</td><td>se fue / yo sé la respuesta</td></tr>
+            <tr><td>si (condición)</td><td><b>sí</b> (afirmación)</td><td>si vienes / sí quiero</td></tr>
+            <tr><td>de (preposición)</td><td><b>dé</b> (de dar)</td><td>de la casa / que te dé dinero</td></tr>
+        </table>
+    </section>
+
+    <!-- ========== EJEMPLOS SIN JS ========== -->
+    <section class="bloque">
+        <h2>✍️ Ejemplos Prácticos - Ya resueltos para repasar</h2>
+        <p style="color:#94a3b8">Lee los ejemplos, sin escribir, solo para repasar.</p>
+
+        <ul style="margin-top:15px;">
+            <li>1. Clasifica: can<b>ción</b> es <b>aguda</b> , <b>árbol</b> es <b>grave</b> , <b>música</b> es <b>esdrújula</b> → <b>aguda grave esdrújula</b></li>
+            <li>2. ¿Lleva tilde? examen = <b>no</b> , lápiz = <b>sí</b> , miércoles = <b>sí</b> → <b>no sí sí</b></li>
+            <li>3. "Tu perro es lindo, ¿tú tienes té?" ¿Cuántas tildes faltan en "Tu perro es lindo, tu tienes te?" → <b>2</b></li>
+            <li>4. ¿Dónde va la tilde? "<b>María</b> <b>sonrió</b> al ver el <b>baúl</b>" → <b>María sonrió baúl</b></li>
+            <li>5. ¿Aguda, grave o esdrújula? "murciélago" → <b>esdrújula</b></li>
+        </ul>
+    </section>
+
+</main>
+
+<a href="{{ url_for('ejercicios_ortografia') }}" class="volver-orto">✦ Volver</a>
+
+</body>
+</html>
