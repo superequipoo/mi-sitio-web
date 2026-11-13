@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Redacción | Ejercicios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body style="background:#0a192f; margin:0; font-family:sans-serif;">
+
+<header style="padding:20px; border-bottom:1px solid #112240;">
+    <h2 style="color:white; margin:0;">APRENDE <span style="color:#00ff88;">MAS</span> // REDACCIÓN</h2>
+</header>
+
+<div class="redaccion-wrapper">
+    <a href="{{ url_for('ejercicios_lengua') }}" class="volver-red">✦ Volver al Banco</a>
+
+    <div class="redaccion-header" style="margin-top:20px;">
+        <span class="sobrelinea">BLOQUE 6 DE 6 / DIFÍCIL</span>
+        <h1>Redacción y Estructura ✍️</h1>
+        <p>Escribe bien, conecta ideas y arma textos que se entiendan. Clave para tu ensayo.</p>
+    </div>
+
+    <div class="grid-redaccion">
+
+        <div class="card-red borde-verde">
+            <span class="badge-red facil">NIVEL 1</span>
+            <h3>📄 Tipos de Texto</h3>
+            <p class="desc">Narrativo, descriptivo, expositivo, argumentativo e instructivo.</p>
+            <p class="meta">⏱ 10 min | ✦ 12 preguntas</p>
+            <a href="{{ url_for('tipos_de_texto')}}" class="btn-red">Empezar →</a>
+        </div>
+
+        <div class="card-red borde-azul">
+            <span class="badge-red medio">NIVEL 2</span>
+            <h3>🔗 Conectores Lógicos</h3>
+            <p class="desc">Sin embargo, por lo tanto, además, en cambio, es decir.</p>
+            <p class="meta">⏱ 10 min | ✦ 1-5 preguntas | EXANI</p>
+            <a href="{{ url_for('conectores_logicos')}}" class="btn-red secundario">Empezar →</a>
+        </div>
+
+        <div class="card-red borde-amarillo">
+            <span class="badge-red dificil">NIVEL 3</span>
+            <h3>🧩 Coherencia y Cohesión</h3>
+            <p class="desc">Ordena párrafos, corrige vicios de redacción y repeticiones.</p>
+            <p class="meta">⏱ 15 min | ✦ 10 ejercicios</p>
+            <a href="{{ url_for('coherencia_cohesion')}}" class="btn-red secundario">Empezar →</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

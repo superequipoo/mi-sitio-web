@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Final Matemáticas | Mundo del Saber</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<nav class="barra">
+    <a href="{{ url_for('index') }}" class="marca">
+        <span class="logo">✦</span> Mundo del Saber
+    </a>
+    <a href="{{ url_for('matematicas') }}" class="enlace-inicio"> Matemáticas</a>
+</nav>
+
+<div class="portada portada-naranja">
+    <span class="etiqueta">EXAMEN FINAL / TODO MATEMÁTICAS</span>
+    <h1>EXAMEN <span>FINAL</span></h1>
+    <p>20 preguntas de todo lo que viste: Álgebra, Pitágoras, Potencias, Fracciones y Porcentajes. ¿Pasas o repruebas?</p>
+    <div class="insignia">📝 20 preguntas | ⏱ 10 minutos | ✅ Para pasar: 14 / 20</div>
+</div>
+
+<div class="contenido">
+    <div class="bloque" style="text-align:center;">
+
+        <p style="font-weight:800; font-size:16px;">
+            Pregunta: <span id="pregunta-actual">0</span>/20 |
+            Aciertos: <span id="aciertos">0</span> |
+            Fallos: <span id="fallos">0</span> |
+            Tiempo: <span id="tiempo">10:00</span> ⏱
+        </p>
+
+        <!-- BARRA DE PROGRESO -->
+        <div style="background:#1a2a5a; border-radius:20px; height:14px; margin:15px 0; overflow:hidden;">
+            <div id="barra-progreso" style="background:#00ffc6; height:100%; width:0%; transition:0.3s;"></div>
+        </div>
+
+        <p id="tema" style="color:#8aa0c6;">Tema: -</p>
+
+        <!-- CAJA DE PREGUNTA -->
+        <div style="background:#0d1430; border:1px solid #2a3a65; border-radius:12px; padding:18px; margin:15px 0;">
+            <p style="color:#8aa0c6; font-size:13px; margin:0;">Pregunta:</p>
+            <h2 id="operacion" style="font-size:26px; margin:12px 0 0; line-height:1.4;">Presiona EMPEZAR EXAMEN</h2>
+            <p id="contexto" style="color:#fff; font-size:15px; margin:10px 0 0;"></p>
+        </div>
+
+        <p id="pista" style="color:#8aa0c6; min-height:20px; font-size:13px;">En el examen NO hay pistas. Es como en la escuela.</p>
+        <p id="instruccion-respuesta" style="color:#ffaa00; font-size:13px; min-height:18px;">Escribe solo el número. Si es fracción, puedes poner 1/2 o 0.5</p>
+
+        <div id="zona-input" style="display:none;">
+            <input type="text" id="respuesta" class="ejercicio-input" placeholder="Tu respuesta" style="max-width:280px; text-align:center; font-size:20px;">
+            <br><br>
+            <button id="btn-comprobar-respuesta" class="btn-comprobar" type="button">SIGUIENTE →</button>
+            <br>
+            <button id="btn-saltar" class="btn-aventura" type="button" style="margin-top:10px;">Saltar pregunta ⏭</button>
+        </div>
+
+        <button id="btn-start" class="btn-comprobar" type="button">EMPEZAR EXAMEN ▶</button>
+
+        <p id="feedback" style="font-weight:800; margin-top:15px; line-height:1.5;"></p>
+
+        <!-- RESULTADO FINAL -->
+        <div id="zona-fin" style="display:none; background:#111a3a; border:1px solid #00ffc6; border-radius:12px; padding:20px; margin-top:15px;">
+            <h3 id="titulo-fin" style="color:#00ffc6;">🏁 Examen terminado</h3>
+            <p id="calificacion" style="font-size:50px; font-weight:900; color:#fff; margin:10px 0;">0.0</p>
+            <p id="texto-fin" style="color:#fff; line-height:1.6;"></p>
+            <p id="medalla" style="font-size:40px;"></p>
+            <div id="resumen-temas" style="text-align:left; background:#0d1430; border-radius:10px; padding:15px; margin:15px 0; color:#fff; font-size:14px; line-height:1.8;"></div>
+            <button id="btn-reintentar" class="btn-comprobar" type="button">VOLVER A HACER EXAMEN ↻</button>
+            <br><br>
+            <a href="{{ url_for('desafio_matematicas') }}" class="btn-aventura" style="display:inline-block;">Ir a Desafíos ⚡</a>
+            <a href="{{ url_for('matematicas') }}" class="btn-aventura" style="display:inline-block;">Volver a Practicar 📚</a>
+        </div>
+
+        <br>
+        <p style="color:#8aa0c6; font-size:13px;">¿Qué incluye el examen?</p>
+        <p style="color:#fff; font-size:13px; line-height:1.8;">
+            🟦 4 Álgebra &nbsp;|&nbsp; 📐 4 Pitágoras &nbsp;|&nbsp; ⚡ 4 Potencias y Raíces<br>
+            🍕 4 Fracciones y Decimales &nbsp;|&nbsp; 🛍️ 4 Porcentajes y Descuentos
+        </p>
+
+    </div>
+</div>
+
+<a href="{{ url_for('matematicas') }}" class="volver-orto">✦ Volver a Matemáticas</a>
+
+<!-- JS CONECTADO APARTE, AL FINAL -->
+<script src="{{ url_for('static', filename='js/examen_matematicas.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas | Mundo del Saber</title>
+
+    <!-- Conecta la página con la hoja de estilos CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+    <html lang="es">
+<body>
+
+<!-- Barra de navegación para regresar a la página principal -->
+<nav class="barra">
+    <a href="{{ url_for('index') }}" class="marca">
+        <span class="logo">✦</span> Mundo del Saber
+    </a>
+    <a href="{{ url_for('index') }}" class="enlace-inicio"> Materias</a>
+</nav>
+
+<!-- Portada principal de Lengua y Comunicación -->
+<header class="portada portada-rosa">
+    <span class="etiqueta"> PIENSA, EXPERIMENTA Y RESUELVE</span>
+    <h1>¡Bienvenido a<br><span> | Matemáticas!</span></h1>
+    <p>Piensa, experimenta y demuestra que los números también pueden ser divertidos</p>
+    <div class="insignia"> ¡Tu próximo reto te espera!</div>
+</header>
+
+<!-- Contenido principal con las actividades disponibles -->
+<main class="contenido">
+    <div class="titulo-seccion">
+        <span class="sobrelinea">TU ZONA DE APRENDIZAJE</span>
+        <h2>¡Explora tus actividades!</h2>
+        <p>eXPLORA LAS OPCIONES Y CONVIERTETE EN UNA ESTRELLA DE LAS MATEMÁTICAS</p>
+    </div>
+
+    <!-- Cuadrícula que organiza las tarjetas de actividades -->
+    <section class="rejilla-actividades">
+
+        <!-- Tarjeta de lecturas con enlace a los géneros literarios -->
+        <article class="actividad actividad-rosa">
+            <div class="icono-actividad"> 🎮  </div>
+            <span class="numero">01 / DIVERSIÓN</span>
+            <h3>Juegos</h3>
+            <p>Aprende mediante juegos matemáticos y pon a prueba tu rapidez mental.</p>
+            <span class="pie-tarjeta">¡A jugar!</span>
+            <a href="{{ url_for('juegos_matematicas') }}" class="btn-aventura">Ir a juegos</a>
+        </article>
+
+        <!-- Tarjeta de juegos para practicar el lenguaje -->
+        <article class="actividad actividad-morado">
+            <div class="icono-actividad"> ➗ </div>
+            <span class="numero">02 / PRÁCTICA</span>
+            <h3>Operaciones</h3>
+            <p>Practica desde lo as basico hasta lo superior.</p>
+            <span class="pie-tarjeta">¡Los numeros son tus amigos! 🎮</span>
+            <a href="{{ url_for('operaciones_matematicas') }}" class="btn-aventura"> ➗ practica operaciones</a>
+        </article>
+
+
+        <!-- Tarjeta de retos para poner a prueba los conocimientos -->
+        <article class="actividad actividad-naranja">
+            <div class="icono-actividad"> 🎯 </div>
+            <span class="numero">04 / DESAFÍO</span>
+            <h3>Desafios</h3>
+            <p>Resuelve acertijos logicos, problemas de ingenio y retros contrareloj.</p>
+            <span class="pie-tarjeta">¡¡Te atreves?! 🔥</span>
+            <a href="{{ url_for('desafio_matematicas') }}" class="btn-aventura">Iniciar retos</a>
+            <div style="display:flex; gap:15px; margin-top:20px;">
+        </article>
+
+        <article class="actividad actividad-naranja">
+            <div class="icono-actividad"> 🕑 </div>
+            <span class="numero">04 / EXAMEN</span>
+            <h3>examen de todo lo aprendido</h3>
+            <p>Resuelve acertijos logicos, problemas de ingenio y retros contrareloj.</p>
+            <span class="pie-tarjeta">¡¡Te atreves?! 🔥</span>
+            <a href="{{ url_for('examen_matematicas') }}" class="btn-aventura">Iniciar reto</a>
+            <div style="display:flex; gap:15px; margin-top:20px;">
+        </article>
+
+    </section>
+
+        <!-- Botón para volver a la selección de materias -->
+     <div class="centrado">
+            <a href="{{ url_for('index') }}" class="boton boton-rosa">→ Volver a las materias</a>
+        </div>
+    </main>
+</body>
+</html>

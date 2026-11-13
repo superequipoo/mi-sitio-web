@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones | Matemáticas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body style="background:#0a1020; margin:0; font-family:sans-serif;">
+
+<header style="padding:20px; border-bottom:1px solid #111a33;">
+    <h2 style="color:white; margin:0;">APRENDE <span style="color:#00ff88;">MAS</span> // OPERACIONES</h2>
+</header>
+
+<div class="opera-wrapper">
+    <a href="{{ url_for('matematicas') }}" class="volver-opera">✦ Volver a Matemáticas</a>
+
+    <div class="opera-header" style="margin-top:20px;">
+        <span class="sobrelinea">BLOQUE 02 DE 03 / PRÁCTICA - 3ERO SECUNDARIA Y PREPA</span>
+        <h1>Operaciones Tácticas ➗</h1>
+        <p>Todo lo que sale en EXANI II y COMIPEMS: sin suma simple, puro nivel 3ero y prepa.</p>
+    </div>
+
+    <div class="grid-opera">
+
+        <div class="card-opera borde-azul">
+            <span class="badge-opera medio">3ERO SECUNDARIA</span>
+            <h3>✖️ Potencias y Raíces</h3>
+            <p class="desc">a², a³, √a, diferencia de cuadrados a²-b². Sin calculadora.</p>
+            <p class="meta">⏱ 8 min | ✦ Potenciación | Nivel 3</p>
+            <a href="{{ url_for('potencias_y_raizez') }}" class="btn-opera">Practicar →</a>
+        </div>
+
+        <div class="card-opera borde-amarillo">
+            <span class="badge-opera medio">PREPA</span>
+            <h3>➗ Fracciones y Decimales Tácticos</h3>
+            <p class="desc">a/b + c/b, a/b con decimales, a * 0.b. Conversión fracción-decimal.</p>
+            <p class="meta">⏱ 10 min | ✦ Fracciones | Nivel Prepa</p>
+            <a href="{{ url_for('fracciones_y_decimales_tacticos') }}" class="btn-opera">Practicar →</a>
+        </div>
+
+        <div class="card-opera borde-morado">
+            <span class="badge-opera dificil">PREPA / EXANI</span>
+            <h3>🔢 Porcentajes y Descuentos</h3>
+            <p class="desc">10%, 25%, 30%, 75% de N, y problema inverso: p% de ? = N + descuentos reales.</p>
+            <p class="meta">⏱ 12 min | ✦ 15 ejercicios | COMIPEMS / EXANI-II</p>
+            <a href="{{ url_for('porsentajes_y_descuentos') }}" class="btn-opera">Practicar →</a>
+        </div>
+
+        <div class="card-opera borde-rojo">
+            <span class="badge-opera dificil">PREPA</span>
+            <h3>🧩 Álgebra + Pitágoras</h3>
+            <p class="desc">ax + b = cx + d, x² = a, catetos a y b → hipotenusa. Producto (ax)(b).</p>
+            <p class="meta">⏱ 15 min | ✦ 15 ejercicios | EXANI-II</p>
+            <a href="{{ url_for('algebra_y_pitagoras') }}" class="btn-opera">Practicar →</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

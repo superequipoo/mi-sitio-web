@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gramática | Ejercicios</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body style="background:#0a192f; margin:0; font-family:sans-serif;">
+
+<header style="padding:20px; border-bottom:1px solid #112240;">
+    <h2 style="color:white; margin:0;">APRENDE <span style="color:#ff8c42;">MAS</span> // GRAMÁTICA</h2>
+</header>
+
+<div class="gramatica-wrapper">
+    <a href="{{ url_for('ejercicios_lengua') }}" class="volver-gram">✦ Volver al Banco</a>
+
+    <div class="gramatica-header" style="margin-top:20px;">
+        <span class="sobrelinea">BLOQUE 2 DE 6 / MEDIO</span>
+        <h1>Gramática y Sintaxis 🔧</h1>
+        <p>Sujeto, predicado, objetos y tipos de oración. Base para EXANI-II.</p>
+    </div>
+
+    <div class="grid-gramatica">
+        
+        <div class="card-gram borde-naranja">
+            <span class="badge-gram medio">NIVEL 1</span>
+            <h3>👤 Sujeto y Predicado</h3>
+            <p class="desc">Núcleo del sujeto, sujeto tácito, predicado nominal y verbal.</p>
+            <p class="meta">⏱ 12 min | ✦ 15 preguntas</p>
+            <a href="{{ url_for('gramatica_sujeto_predicado')}}" class="btn-gram">Empezar →</a>
+        </div>
+
+        <div class="card-gram borde-azul">
+            <span class="badge-gram dificil">NIVEL 2</span>
+            <h3>🎯 Objeto Directo e Indirecto</h3>
+            <p class="desc">OD, OI, uso de lo, la, le, se. ¿Le dije o lo dije?</p>
+            <p class="meta">⏱ 12 min | ✦ 15 preguntas</p>
+            <a href="{{ url_for('gramatica_objeto')}}" class="btn-gram">Empezar →</a>
+        </div>
+
+        <div class="card-gram borde-verde">
+            <span class="badge-gram facil">NIVEL 1</span>
+            <h3>📦 Categorías Gramaticales</h3>
+            <p class="desc">Sustantivo, adjetivo, verbo, adverbio, preposición, conjunción.</p>
+            <p class="meta">⏱ 10 min | ✦ 18 preguntas</p>
+            <a href="{{ url_for('gramatica_categorias')}}" class="btn-gram">Empezar →</a>
+        </div>
+
+        <div class="card-gram borde-morado">
+            <span class="badge-gram medio">NIVEL 3</span>
+            <h3>🔗 Oración Simple y Compuesta</h3>
+            <p class="desc">Coordinadas, subordinadas, yuxtapuestas. Nexos y conectores.</p>
+            <p class="meta">⏱ 15 min | ✦ 15 preguntas</p>
+            <a href="{{ url_for('gramatica_oracion')}}" class="btn-gram">Empezar →</a>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

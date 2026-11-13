@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprensión - Inferencia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<header class="portada">
+    <h1>Comprensión <span>Inferencia</span></h1>
+    <p>Bloque 3 - Lo que el texto NO dice pero se entiende. El más difícil del EXANI.</p>
+</header>
+
+<main class="contenido">
+
+    <!-- ========== BLOQUE 1 ========== -->
+    <section class="bloque bloque-naranja">
+        <h2>🕵️ ¿Qué es Inferir?</h2>
+        <p style="color:#94a3b8;">Es sacar una conclusión que no está escrita, pero que es lógica con lo que sí está escrito.</p>
+        
+        <h3>1. La fórmula del EXANI</h3>
+        <ul>
+            <li><b>Texto dice A + Tú sabes B = Infieres C</b></li>
+            <li>Texto: "Juan llegó empapado con paraguas roto"</li>
+            <li>Tú sabes: Si llueve te mojas</li>
+            <li>Infieres: <b>Estaba lloviendo fuerte</b></li>
+        </ul>
+
+        <h3>2. Tipos de inferencia que preguntan</h3>
+        <ul>
+            <li><b>Emoción:</b> "María apretó los puños y gritó" → Está enojada</li>
+            <li><b>Lugar:</b> "Se escuchaban olas y gaviotas" → Está en la playa</li>
+            <li><b>Tiempo:</b> "Las calles estaban oscuras y silenciosas" → Es de noche</li>
+            <li><b>Causa:</b> "No estudió y reprobó" → Reprobó por no estudiar</li>
+        </ul>
+
+        <h3>3. Truco para no fallar</h3>
+        <ul>
+            <li>NUNCA inventes, todo debe salir del texto</li>
+            <li>Si no puedes señalar con el dedo en qué parte del texto te basas, no es inferencia, es invento</li>
+            <li>Pregunta: ¿Qué me quiso decir sin decirlo?</li>
+        </ul>
+    </section>
+
+    <!-- ========== BLOQUE 2 ========== -->
+    <section class="bloque bloque-azul">
+        <h2>❌ Errores que te hacen perder puntos</h2>
+        
+        <h3>1. Confundir inferencia con opinión</h3>
+        <ul>
+            <li>Texto: "La película duró 3 horas"</li>
+            <li>❌ Opinión: "La película fue aburrida" (eso lo piensas tú)</li>
+            <li>✅ Inferencia: "La película fue larga" (3 horas = larga, es lógico)</li>
+        </ul>
+
+        <h3>2. Irte muy lejos</h3>
+        <ul>
+            <li>Texto: "Pedro sacó 10 en matemáticas"</li>
+            <li>❌ "Pedro será ingeniero de la NASA" → Te fuiste muy lejos</li>
+            <li>✅ "Pedro es bueno en matemáticas" → Corto y lógico</li>
+        </ul>
+
+        <h3>3. Palabras clave del EXANI para inferencia</h3>
+        <ul>
+            <li>Te preguntan: <b>Se puede inferir, Se deduce, Se concluye, Probablemente, Lo más probable es que...</b></li>
+            <li>Cuando veas esas palabras, es inferencia 100%</li>
+        </ul>
+    </section>
+
+    <!-- ========== EJEMPLOS ========== -->
+    <section class="bloque bloque-verde">
+        <h2>📚 Ejemplos Nivel EXANI</h2>
+
+        <div style="background:#111b36; padding:20px; border-radius:14px; margin-bottom:15px;">
+            <p style="color:#94a3b8; font-size:13px;">TEXTO EXANI</p>
+            <p>"Laura miró el reloj por tercera vez, suspiró y guardó su celular. La mesa del restaurante seguía vacía frente a ella."</p>
+            <p style="margin-top:12px;"><b style="color:#00ff88">Pregunta:</b> ¿Qué se puede inferir?</p>
+            <p><b style="color:white">Respuesta:</b> Esperaba a alguien que no llegó / La dejaron plantada.</p>
+            <p style="color:#94a3b8; font-size:12px; margin-top:5px;">Pistas: miró reloj 3 veces + suspiró + mesa vacía = espera fallida</p>
+        </div>
+
+        <div style="background:#111b36; padding:20px; border-radius:14px;">
+            <p style="color:#94a3b8; font-size:13px;">TEXTO EXANI</p>
+            <p>"El anciano sacó una foto arrugada de su cartera, la miró fijamente y una lágrima rodó por su mejilla."</p>
+            <p style="margin-top:12px;"><b style="color:#00ff88">Inferencia:</b> La foto es de alguien que extraña o que ya no está.</p>
+        </div>
+    </section>
+
+    <!-- ========== EJERCICIOS ========== -->
+    <section class="bloque">
+        <h2>✍️ Ejercicios de Inferencia</h2>
+
+        <div class="pregunta-box">
+            <p style="font-size:13px; color:#94a3b8;">"Ana llegó corriendo, sudando y con la mochila abierta"</p>
+            <p>¿Qué se puede inferir?</p>
+            <input class="ejercicio-input" placeholder="¿Por qué corría?">
+        </div>
+
+        <div class="pregunta-box">
+            <p style="font-size:13px; color:#94a3b8;">"Se escuchaban risas, música y el olor a carne asada llegaba hasta la calle"</p>
+            <p>¿Dónde ocurre probablemente?</p>
+            <input class="ejercicio-input" placeholder="fiesta / playa / escuela">
+        </div>
+
+        <div class="pregunta-box">
+            <p style="font-size:13px; color:#94a3b8;">"Carlos revisó su cartera dos veces y salió del supermercado sin nada"</p>
+            <p>¿Qué infieres?</p>
+            <input class="ejercicio-input" placeholder="">
+        </div>
+
+        <div class="pregunta-box">
+            <p>"Las luces estaban apagadas y todos gritaron ¡Sorpresa!" ¿Qué había?</p>
+            <input class="ejercicio-input" placeholder="">
+        </div>
+
+        <div class="pregunta-box">
+            <p>Si te preguntan "Se puede inferir" debes buscar una respuesta que...</p>
+            <input class="ejercicio-input" placeholder="está escrita literal / es lógica pero no escrita">
+        </div>
+
+        <button class="btn-comprobar" id="btn-comprobar">Comprobar respuestas</button>
+        <div id="resultado" style="margin-top:15px; font-weight:800;"></div>
+    </section>
+
+</main>
+
+<a href="{{ url_for('ejercicios_comprension') }}" class="volver-orto">✦ Volver</a>
+
+<!-- CONEXIÓN CON EL JS -->
+<script src="{{ url_for('static', filename='js/inferencia.js') }}"></script>
+
+</body>
+</html>

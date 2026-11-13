@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Directo e Indirecto - Completo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<header class="portada">
+    <h1>Objeto <span>Directo e Indirecto</span></h1>
+    <p>Lo, la, le, se. Aquí es donde todos se confunden en el EXANI.</p>
+</header>
+
+<main class="contenido">
+
+    <!-- ========== BLOQUE OD ========== -->
+    <section class="bloque bloque-naranja">
+        <h2>🎯 Objeto Directo (OD) - ¿QUÉ?</h2>
+        <p style="color:#94a3b8; margin-bottom:15px;">Es lo que recibe la acción directamente. Sin rodeos.</p>
+        
+        <h3>1. Cómo encontrarlo</h3>
+        <ul>
+            <li>Pregunta ¿qué? o ¿a quién? al verbo</li>
+            <li>Juan come <b>pizza</b> → ¿Qué come? Pizza → es OD</li>
+            <li>Vi a <b>María</b> → ¿A quién vi? A María → es OD</li>
+        </ul>
+
+        <h3>2. Cómo se reemplaza</h3>
+        <ul>
+            <li>Se cambia por <b>lo, la, los, las</b></li>
+            <li>Juan come pizza → Juan <b>la</b> come</li>
+            <li>Compré libros → <b>Los</b> compré</li>
+            <li>Vi a María → <b>La</b> vi</li>
+        </ul>
+
+        <h3>3. Truco EXANI</h3>
+        <ul>
+            <li>Si puedes decir "lo" o "la" y suena bien, es directo</li>
+            <li>Ej: "Compré una bici" → "La compré" ✅ es OD</li>
+        </ul>
+    </section>
+
+    <!-- ========== BLOQUE OI ========== -->
+    <section class="bloque bloque-azul">
+        <h2>💌 Objeto Indirecto (OI) - ¿A QUIÉN? ¿PARA QUIÉN?</h2>
+        <p style="color:#94a3b8; margin-bottom:15px;">Es a quién va dirigida la acción. El destinatario.</p>
+
+        <h3>1. Cómo encontrarlo</h3>
+        <ul>
+            <li>Pregunta ¿a quién? ¿para quién? ¿a qué?</li>
+            <li>Di un regalo <b>a María</b> → ¿A quién le di el regalo? A María → es OI</li>
+            <li>Compré flores <b>para mi mamá</b> → ¿Para quién? Para mi mamá → es OI</li>
+        </ul>
+
+        <h3>2. Cómo se reemplaza</h3>
+        <ul>
+            <li>Se cambia por <b>le, les, se</b></li>
+            <li>Di un regalo a María → <b>Le</b> di un regalo</li>
+            <li>Escribí a mis papás → <b>Les</b> escribí</li>
+        </ul>
+
+        <h3>3. La regla de oro: SE LO</h3>
+        <ul>
+            <li>Cuando van juntos OI + OD, el OI (le/les) se convierte en <b>se</b></li>
+            <li>❌ "Le lo dije" → ✅ "<b>Se lo</b> dije"</li>
+            <li>Le di el libro a Juan → <b>Se lo</b> di</li>
+            <li>Esta regla sale SIEMPRE en EXANI</li>
+        </ul>
+    </section>
+
+    <!-- ========== LEISMO ========== -->
+    <section class="bloque bloque-verde">
+        <h2>🧠 El error que todos cometen: Leísmo</h2>
+        <ul>
+            <li>❌ "Le vi a María ayer" → ESTÁ MAL. María es mujer y es OD, debe ser <b>La vi</b></li>
+            <li>✅ "La vi a María ayer" → BIEN, porque es directa</li>
+            <li>✅ "Le dije a Juan que viniera" → BIEN, porque Juan es destinatario (OI)</li>
+            <li><b>Resumen:</b> ¿Recibe la acción directa? lo/la. ¿Recibe indirectamente? le</li>
+        </ul>
+    </section>
+
+    <!-- ========== COMPARATIVA ========== -->
+    <section class="bloque" style="border: 2px dashed #ff9500;">
+        <h2>📊 Comparativa rápida</h2>
+        <table style="width:100%; border-collapse:collapse; margin-top:10px;">
+            <tr style="background:#1e293b;"><th style="padding:10px; text-align:left; border-radius:8px 0 0 0;">Pregunta</th><th style="padding:10px; text-align:left;">Pronombre</th><th style="padding:10px; text-align:left; border-radius:0 8px 0 0;">Ejemplo</th></tr>
+            <tr><td style="padding:10px; border-bottom:1px solid #1e293b; color:#94a3b8;">¿Qué? / ¿A quién?</td><td style="padding:10px; border-bottom:1px solid #1e293b;"><b style="color:white">lo, la</b></td><td style="padding:10px; border-bottom:1px solid #1e293b; color:#94a3b8;">La vi, Lo compré</td></tr>
+            <tr><td style="padding:10px; color:#94a3b8;">¿A quién? / ¿Para quién?</td><td style="padding:10px;"><b style="color:white">le, se</b></td><td style="padding:10px; color:#94a3b8;">Le dije, Se lo di</td></tr>
+        </table>
+    </section>
+
+    <!-- ========== EJERCICIOS ========== -->
+    <section class="bloque">
+        <h2>✍️ Ejercicios Prácticos</h2>
+
+        <div class="pregunta-box">
+            <p>1. "Le di un libro a Pedro" ¿'a Pedro' es OD u OI?</p>
+            <input class="ejercicio-input" placeholder="OD / OI">
+        </div>
+
+        <div class="pregunta-box">
+            <p>2. "Compré una bici" → "___ compré" ¿la o le?</p>
+            <input class="ejercicio-input" placeholder="la / le">
+        </div>
+
+        <div class="pregunta-box">
+            <p>3. Corrige la oración: "Le vi a María ayer"</p>
+            <input class="ejercicio-input" placeholder="Escribe la corrección">
+        </div>
+
+        <div class="pregunta-box">
+            <p>4. "Le presté dinero a Juan" ¿Cuál es el OD?</p>
+            <input class="ejercicio-input" placeholder="¿Qué presté?">
+        </div>
+
+        <div class="pregunta-box">
+            <p>5. "Les escribí una carta a mis papás" ¿Cuál es el OI?</p>
+            <input class="ejercicio-input" placeholder="">
+        </div>
+
+        <button class="btn-comprobar" id="btn-comprobar">Comprobar respuestas</button>
+        <div id="resultado" style="margin-top:15px; font-weight:800;"></div>
+    </section>
+
+</main>
+
+<a href="{{ url_for('ejercicios_gramatica') }}" class="volver-orto">✦ Volver</a>
+
+<!-- CONEXIÓN CON EL JS -->
+<script src="{{ url_for('static', filename='js/objeto_directo_indirecto.js') }}"></script>
+
+</body>
+</html>

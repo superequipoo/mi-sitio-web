@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafíos | Matemáticas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<nav class="barra">
+    <a href="{{ url_for('index') }}" class="marca">
+        <span class="logo">✦</span> Mundo del Saber
+    </a>
+    <a href="{{ url_for('matematicas') }}" class="enlace-inicio"> Matemáticas</a>
+</nav>
+
+<header class="portada portada-naranja">
+    <span class="etiqueta"> 04 / DESAFÍO - RETOS FINALES</span>
+    <h1>¡Acepta el<br><span>Desafío!</span></h1>
+    <p>Ya practicaste con pasos. Ahora sin ayuda. ¿Dominas los 4 temas de verdad?</p>
+    <div class="insignia"> 🎯 ¡Solo para valientes! | Álgebra • Potencias • Fracciones • Porcentajes</div>
+</header>
+
+<main class="contenido">
+    <div class="titulo-seccion">
+        <span class="sobrelinea">ZONA DE DESAFÍOS</span>
+        <h2>¡Demuestra que eres el mejor!</h2>
+        <p>6 desafíos, uno por cada tema que practicaste + 1 Boss Final con todo mezclado.</p>
+        <p style="color:#8aa0c6; font-size:13px;">Tip: Si te atoras en un desafío, vuelve a la práctica de ese tema, ahí sí hay pasos.</p>
+    </div>
+
+    <section class="rejilla-actividades">
+
+        <!-- 01 - ÁLGEBRA -->
+        <article class="actividad actividad-naranja">
+            <div class="icono-actividad"> 🧠 </div>
+            <span class="numero">01 / ÁLGEBRA Y PITÁGORAS</span>
+            <h3>Despeja X o Muere</h3>
+            <p>10 ecuaciones: lineales, x² y sistemas. Sin pasos, sin ayuda. Solo tú y la X.<br><br>
+            <b>Ej:</b> 3x + 4 = 19 ¿x = ?</p>
+            <span class="pie-tarjeta">⏱ 10 min | ✦ 10 retos | Sin ayuda</span>
+            <a href="{{ url_for('desafio_algebra_pitagoras') }}" class="btn-aventura">Aceptar desafío →</a>
+        </article>
+
+        <!-- 02 - POTENCIAS -->
+        <article class="actividad actividad-roja">
+            <div class="icono-actividad"> ⏱️ </div>
+            <span class="numero">02 / POTENCIAS Y RAÍCES - CONTRARRELOJ</span>
+            <h3>Reto 100 Segundos</h3>
+            <p>100 segundos, 20 problemas. Cuadrados, cubos, raíces y leyes. ¿Cuántos logras sin calculadora?<br><br>
+            <b>Ej:</b> 7² = ? , √64 = ? , 2² × 2³ = 2^?</p>
+            <span class="pie-tarjeta">⏱ 100 seg | Ranking | Memoria</span>
+            <a href="{{ url_for('desafio_potencias_raices') }}" class="btn-aventura">Aceptar desafío →</a>
+        </article>
+
+
+        <!-- 04 - FRACCIONES -->
+        <article class="actividad actividad-verde">
+            <div class="icono-actividad"> 🍕 </div>
+            <span class="numero">04 / FRACCIONES Y DECIMALES</span>
+            <h3>¿Fracción o Decimal?</h3>
+            <p>Convierte, suma y simplifica. Te puedes equivocar entre 1/2 y 0.5, pero aquí valen las dos.<br><br>
+            <b>Ej:</b> 2/5 + 1/5 = ? , 0.75 = ? en fracción</p>
+            <span class="pie-tarjeta">⏱ 12 min | Conversión | Pizza time</span>
+            <a href="{{ url_for('desafio_fracciones_decimales') }}" class="btn-aventura">Aceptar desafío →</a>
+        </article>
+
+        <!-- 05 - PORCENTAJES -->
+        <article class="actividad actividad-amarilla">
+            <div class="icono-actividad"> 🛍️ </div>
+            <span class="numero">05 / PORCENTAJES Y DESCUENTOS</span>
+            <h3>La Tienda Imposible</h3>
+            <p>La tienda tiene 40% OFF en todo, pero el precio final te engaña. ¿Cuánto pagas de verdad?<br><br>
+            <b>Ej:</b> Playera $500 con 40% OFF. ¿Pagas $200 o $300?</p>
+            <span class="pie-tarjeta">⏱ 10 min | Tienda | No te dejes engañar</span>
+            <a href="{{ url_for('desafio_porcentajes_descuentos') }}" class="btn-aventura">Aceptar desafío →</a>
+        </article>
+
+    </section>
+
+    <!-- BARRA DE PROGRESO DE TEMAS -->
+    <div class="bloque" style="text-align:center; margin-top:30px;">
+        <h3 style="margin-bottom:10px;">📚 ¿Ya practicaste los 4 temas?</h3>
+        <p style="color:#8aa0c6; font-size:14px;">Si aún no, practica primero con pasos y luego ven al desafío:</p>
+        <p style="margin-top:15px;">
+            <a href="{{ url_for('algebra_y_pitagoras') }}" class="btn-aventura">Álgebra y Pitágoras</a>
+            <a href="{{ url_for('potencias_y_raizez') }}" class="btn-aventura">Potencias y Raíces</a>
+            <a href="{{ url_for('fracciones_y_decimales_tacticos') }}" class="btn-aventura">Fracciones y Decimales</a>
+            <a href="{{ url_for('porsentajes_y_descuentos') }}" class="btn-aventura">Porcentajes y Descuentos</a>
+        </p>
+    </div>
+
+    <div class="centrado">
+        <a href="{{ url_for('matematicas') }}" class="boton boton-naranja">→ Volver a Matemáticas</a>
+    </div>
+</main>
+
+</body>
+</html>

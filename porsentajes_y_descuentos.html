@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y Descuentos - Práctica paso a paso</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<div class="portada">
+    <span class="etiqueta">MATEMÁTICAS // PRÁCTICA</span>
+    <h1>PORCENTAJES <span>Y DESCUENTOS</span></h1>
+    <p>3ero Secundaria y Prepa | EXANI II - Practica sin presión, con pasos poco a poco</p>
+</div>
+
+<div class="contenido">
+    <div class="bloque" style="text-align:center;">
+
+        <p style="font-weight:800; font-size:16px;">
+            Practicadas: <span id="practicadas">0</span> |
+            Correctas: <span id="correctas">0</span> ✅ |
+            Nivel: <span id="nivel">1</span>
+        </p>
+        <p id="tipo" style="color:#8aa0c6;">Categoría: Todas - Básico, táctico, descuentos e inverso</p>
+
+        <!-- INFO DEL TEMA -->
+        <div id="info-tema" style="background:#111a3a; border:1px solid #2a3a65; border-radius:12px; padding:15px; text-align:left; margin:15px 0;">
+            <b style="color:#00ffc6;">📚 ¿Qué estás practicando?</b>
+            <p id="info-texto" style="color:#dbe4ff; margin:8px 0 0; font-size:14px; line-height:1.5;">
+                Elige una categoría y presiona PRACTICAR. Aquí no pierdes vidas, aprendes con pasos.
+            </p>
+        </div>
+
+        <h2 id="operacion" style="font-size:26px; margin:20px 0; line-height:1.3;">Presiona PRACTICAR</h2>
+        <p id="pista" style="color:#8aa0c6; min-height:20px;"></p>
+
+        <!-- PASOS POCO A POCO -->
+        <div id="zona-pasos" style="display:none; background:#0d1430; border:1px dashed #2a3a65; border-radius:12px; padding:15px; text-align:left; margin:15px 0;">
+            <b style="color:#ffaa00;">📝 Paso a paso:</b>
+            <div id="lista-pasos" style="color:#fff; margin-top:10px; line-height:1.8; font-size:15px;"></div>
+            <button id="btn-siguiente-paso" class="btn-aventura" type="button" style="margin-top:10px;">Ver siguiente paso ➡️</button>
+            <button id="btn-ver-todos" class="btn-aventura" type="button" style="margin-top:10px;">Ver todos los pasos</button>
+            <p id="pasos-contador" style="color:#8aa0c6; font-size:12px; margin-top:8px;"></p>
+        </div>
+
+        <div id="zona-input" style="display:none;">
+            <input type="number" id="respuesta" step="any" class="ejercicio-input" placeholder="Solo el número, sin $ ni %" style="max-width:280px; text-align:center; font-size:20px;">
+            <br>
+            <p style="color:#8aa0c6; font-size:12px;">Escribe solo el número. Ej: si la respuesta es $240, escribe 240</p>
+            <button id="btn-comprobar-respuesta" class="btn-comprobar" type="button">COMPROBAR</button>
+            <button id="btn-ayuda" class="btn-aventura" type="button">Necesito ayuda 💡</button>
+        </div>
+
+        <button id="btn-start" class="btn-comprobar" type="button">PRACTICAR ▶</button>
+
+        <p id="feedback" style="font-weight:800; margin-top:15px; line-height:1.5;"></p>
+        <p id="resultado" style="margin-top:10px; font-weight:800;"></p>
+
+        <br>
+        <p style="color:#8aa0c6; font-size:13px;">Elige qué practicar:</p>
+        <p>
+            <button id="btn-todas" class="btn-aventura" type="button">Todas</button>
+            <button id="btn-basico" class="btn-aventura" type="button">Básico %</button>
+            <button id="btn-tactico" class="btn-aventura" type="button">Táctico EXANI</button>
+            <button id="btn-descuento" class="btn-aventura" type="button">Descuentos</button>
+            <button id="btn-inverso" class="btn-aventura" type="button">Inverso</button>
+        </p>
+
+        <button id="btn-siguiente" class="btn-aventura" type="button">Siguiente ejercicio ⏭️</button>
+
+
+    </div>
+</div>
+
+<a href="{{ url_for('operaciones_matematicas') }}" class="volver-orto">✦ Volver</a>
+
+<!-- CONEXIÓN CON EL JS -->
+<script src="{{ url_for('static', filename='js/porcentajes_y_descuentos.js') }}"></script>
+
+</body>
+</html>

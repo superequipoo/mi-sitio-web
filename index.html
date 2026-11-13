@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APRENDE MAS CON NUESTRA PAGINA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<header>
+    <h2>APRENDE <span>MAS</span> // DIVISIÓN DE ENTRENAMIENTO </h2>
+    <p>UNIDAD DE APRENDIZAJE TÁCTICO Y BUENO PARA ESTUDIANTES</p>
+    
+    <div class="zona-usuario">
+        {% if usuario %}
+            <span class="nombre-logueado" style="color:#00ff88;">SOLDADO: {{ usuario.nombre }} | {{ usuario.usuario }}</span>
+            <a href="{{ url_for('logout') }}" class="btn-logout" style="background:#ff3333; border-color:#ff3333;">CERRAR SESIÓN</a>
+        {% else %}
+            <span class="nombre-logueado">MODO INVITADO - ACCESO RESTRINGIDO</span>
+            <a href="{{ url_for('login') }}" class="btn-logout" style="background:#00aaff; border-color:#00aaff;">INICIAR SESIÓN</a>
+        {% endif %}
+    </div>
+</header>
+
+    <section class="bienvenida">
+        <video class="video-fondo" autoplay muted loop playsinline poster="{{ url_for('static', filename='img/matematicas.png') }}">
+            <source src="{{ url_for('static', filename='video/fondo.mp4') }}" type="video/mp4">
+            <source src="https://videos.pexels.com/video-files/18069234/18069234-uhd_1440_1440_24fps.mp4" type="video/mp4">
+        </video>
+        <div class="overlay-video"></div>
+    
+        <div class="contenido-bienvenida">
+            <h1>¡BIENVENIDO A ESTA PÁGINA!</h1>
+            <div class="caja-texto-mision">
+                <p>
+                    Bienvenido a esta página para ayudar a tus conocimientos. Aquí podrás aprender,
+                    practicar y descubrir nuevos temas de Matemáticas y Lengua y Comunicación para esos usuarios que tienen
+                    dificultad al aprender.
+                </p>
+                <p class="instruccion">¡Elige una materia y comienza a aprender!</p>
+            </div>
+        <div class="botones-inicio">
+            <a href="{{ url_for('registro') }}" class="btn-registro"> REGISTRARME</a>
+            <a href="{{ url_for('ver_usuarios') }}" class="btn-registro"> VER REGISTROS ({{ total_usuarios }})</a>
+        </div>
+        </div>
+</section>
+
+    <main class="materias">
+        <a href="{{ url_for('matematicas') }}" class="tarjeta">
+            <img src="{{ url_for('static', filename='img/matematicas.png') }}" alt="Matemáticas">
+            <div class="contenido">
+                <h2>🔢 MATEMÁTICAS</h2>
+                <p>Operaciones tácticas, álgebra, calculo, ecuaciónes basicas.</p>
+                <span class="boton">INICIAR</span>
+            </div>
+        </a>
+
+        <a href="{{ url_for('lengua') }}" class="tarjeta">
+            <img src="{{ url_for('static', filename='img/lengua.png') }}" alt="Lengua">
+            <div class="contenido">
+                <h2>📖 LENGUA Y COM.</h2>
+                <p>Lecturas, ejercicios, ortografía y mas.</p>
+                <span class="boton">INICIAR</span>
+            </div>
+        </a>
+    </main>
+</body>
+</html>

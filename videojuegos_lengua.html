@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Videojuegos | Lengua</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+<header><h2>APRENDE <span>MAS</span> // LENGUA</h2></header>
+<div class="retos-container" style="max-width:1100px;">
+    <a href="{{ url_for('lengua') }}" class="volver-link">✦ Volver</a>
+    <h1>Centro de Videojuegos 🎮</h1>
+    <div class="grid-juegos">
+        <div class="card-juego"><span class="badge">NUEVO</span><h3>🔤 Sopa de Letras</h3><p>Encuentra 5 palabras de lengua</p><a href="{{ url_for('sopa_letras') }}" class="btn-aventura">JUGAR →</a></div>
+        <div class="card-juego"><span class="badge dificil">DIFÍCIL</span><h3>💀 Ahorcado Ortográfico</h3><p>Adivina la palabra antes de perder vidas</p><a href="{{ url_for('ahorcado') }}" class="btn-aventura">JUGAR →</a></div>
+    </div>
+
+</div>
+</body>
+</html>

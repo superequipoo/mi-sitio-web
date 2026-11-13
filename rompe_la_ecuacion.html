@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rompe la Ecuación - Matemáticas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<div class="portada">
+    <span class="etiqueta">MATEMÁTICAS // VIDEOJUEGO</span>
+    <h1>ROMPE <span>LA ECUACIÓN</span></h1>
+    <p>3ero Secundaria y Prepa | EXANI II - Despeja la X y rompe el candado</p>
+</div>
+
+<div class="contenido">
+    <div class="bloque" style="text-align:center;">
+
+        <p style="font-weight:800; font-size:16px;">
+            Nivel: <span id="nivel">1</span> |
+            Vidas: <span id="vidas">3</span> ❤️ |
+            Puntos: <span id="puntos">0</span> |
+            Tiempo: <span id="tiempo">90</span>s
+        </p>
+        <p id="tipo" style="color:#8aa0c6;">Modo: Secundaria 3ero - Ecuaciones de 1 paso</p>
+
+        <h2 id="ecuacion" style="font-size:38px; margin:25px 0;">Presiona INICIAR</h2>
+        <p id="pista" style="color:#8aa0c6; min-height:20px;"></p>
+
+        <div id="zona-input" style="display:none;">
+            <input type="number" id="respuesta" class="ejercicio-input" placeholder="x = ?" style="max-width:220px; text-align:center; font-size:20px;">
+            <br><br>
+            <button id="btn-comprobar-respuesta" class="btn-comprobar">ROMPER 💥</button>
+        </div>
+
+        <button id="btn-start" class="btn-comprobar">INICIAR ▶</button>
+
+        <p id="feedback" style="font-weight:800; margin-top:15px;"></p>
+        <p id="fin" style="display:none; font-weight:800; font-size:18px;"></p>
+        <p id="resultado" style="margin-top:10px; font-weight:800;"></p>
+
+        <br>
+        <p>
+            <button id="btn-secundaria" class="btn-aventura">Secundaria 3ero</button>
+            <button id="btn-prepa" class="btn-aventura">Prepa</button>
+            <button id="btn-exani" class="btn-aventura">EXANI</button>
+        </p>
+
+
+    </div>
+</div>
+
+<a href="{{ url_for('juegos_matematicas') }}" class="volver-orto">✦ Volver</a>
+
+<!-- CONEXIÓN CON EL JS -->
+<script src="{{ url_for('static', filename='js/rompe_la_ecuacion.js') }}"></script>
+
+</body>
+</html>

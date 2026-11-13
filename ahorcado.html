@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ahorcado Ortográfico - Lengua y Comunicación</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+<header>
+    <h2>APRENDE <span>MAS</span> // AHORCADO</h2>
+    <a href="{{ url_for('videojuegos_lengua') }}" style="color:#00aaff; text-decoration:none; font-weight:bold;">← Volver a Videojuegos</a>
+</header>
+
+<div class="retos-container" style="text-align:center;">
+    <h1>💀 Ahorcado Ortográfico</h1>
+    <p style="color:#8aa0c6;">Nivel: Secundaria + Preparatoria | Adivina la palabra de ortografía</p>
+
+    <p>Pista: <b id="pista"></b></p>
+    <p>Vidas: <span id="vidas">6</span> ❤️</p>
+    <p id="dibujo" style="font-size:32px; margin:10px 0;">😀</p>
+
+    <div id="palabra" class="palabra" style="font-size:32px; letter-spacing:10px; font-weight:800; margin:20px 0;"></div>
+    <div id="teclado" class="teclado" style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center; max-width:500px; margin:0 auto;"></div>
+
+    <h2 id="final"></h2>
+    <p id="puntos" style="font-weight:800; color:#00ffc6;">Puntos: 0 | Ganadas: 0 | Perdidas: 0</p>
+    <p id="resultado" style="margin-top:10px; font-weight:800;"></p>
+
+    <button id="btn-nuevo" class="btn-aventura">Nuevo Juego ↻</button>
+</div>
+
+<!-- CONEXIÓN CON EL JS -->
+<script src="{{ url_for('static', filename='js/ahorcado.js') }}"></script>
+
+</body>
+</html>
